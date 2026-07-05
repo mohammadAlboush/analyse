@@ -7,9 +7,8 @@ Professionell aufbereitete Ergebnisseite des SEO- und GEO-Audits für
 
 ## Inhalt
 
-- `index.html` — interaktive Ergebnisseite (selbstenthalten, keine externen Abhängigkeiten)
+- `index.html` — interaktive Ergebnisseite (eine HTML-Datei)
 - `evidence/` — alle Original-Nachweise:
-  - Hauptbericht v2.0 (PDF, 17 Seiten)
   - PageSpeed Insights Desktop & Mobile (PDF)
   - Otterly.AI Crawlability-Audit, Content-Analyse, Brand-Report (PDF)
   - 10 Screaming-Frog-Screenshots + Otterly Server Access Check + llms.txt-Original

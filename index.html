@@ -7,7 +7,7 @@
 <meta name="description" content="Technischer Prüfbericht: SEO- und GEO-Audit für norbert-pohlmann.com (Glossar Cyber-Sicherheit) mit vollständig verlinkten Nachweisen — PageSpeed, Screaming Frog, Otterly.AI, robots.txt, llms.txt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#f6f7f8;
@@ -27,13 +27,13 @@
   --warn:#95610f;      --warn-tint:#f8f1e4;
   --ok:#1d6b4a;        --ok-tint:#e9f4ee;
   --code-bg:#f1f3f5;
-  --sans:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
-  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
-  --mono:"IBM Plex Mono",Consolas,"Cascadia Mono",monospace;
+  --sans:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",Consolas,"Cascadia Mono",monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-padding-top:24px}
-body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.65}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:15.5px;line-height:1.65}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:var(--accent-ink)}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.25;text-wrap:balance}
@@ -96,14 +96,13 @@ section{padding-top:58px}
 .note{font-size:13.5px;color:var(--ink-2)}
 
 /* status pills */
-.pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;white-space:nowrap}
-.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
-.p-crit{background:var(--crit-tint);color:var(--crit)}
-.p-warn{background:var(--warn-tint);color:var(--warn)}
-.p-ok{background:var(--ok-tint);color:var(--ok)}
-.p-info{background:var(--accent-tint);color:var(--accent)}
-.p-mut{background:#eef1f4;color:var(--ink-2)}
-.tag{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2.5px 8px;border-radius:4px}
+.pill{display:inline-flex;align-items:center;font-size:12.5px;font-weight:600;padding:2.5px 11px;border-radius:6px;white-space:nowrap;border:1px solid transparent}
+.p-crit{background:var(--crit-tint);color:var(--crit);border-color:#eccdd1}
+.p-warn{background:var(--warn-tint);color:var(--warn);border-color:#ead9b8}
+.p-ok{background:var(--ok-tint);color:var(--ok);border-color:#c5dfd0}
+.p-info{background:var(--accent-tint);color:var(--accent);border-color:#c3d9e7}
+.p-mut{background:#eef1f4;color:var(--ink-2);border-color:#dfe3e9}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:5px}
 .t-crit{background:var(--crit-tint);color:var(--crit)}
 .t-warn{background:var(--warn-tint);color:var(--warn)}
 .t-ok{background:var(--ok-tint);color:var(--ok)}
@@ -153,6 +152,9 @@ pre.code{background:var(--code-bg);border:1px solid var(--line);border-radius:6p
 .filebox .fb-h code{font-weight:600}
 .copybtn{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--accent-ink);background:var(--accent-tint);border:1px solid #c3d9e7;border-radius:6px;padding:5px 12px;cursor:pointer}
 .copybtn:hover{background:#dcebf4}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;background:var(--accent);border-radius:7px;padding:8px 16px;text-decoration:none;margin-top:16px}
+.btn:hover{background:var(--accent-ink);color:#fff}
+.btn .ic{font-size:14px}
 pre.code .cm{color:var(--ink-3)}
 pre.code .del{background:#f6dbde;color:#8c1d29;border-radius:3px;padding:1px 4px}
 pre.code .ins{background:#d8ecdf;color:#175c3c;border-radius:3px;padding:1px 4px}
@@ -375,13 +377,12 @@ td.num{font-weight:600}
     <div class="s-h"><svg class="ic"><use href="#i-shield"/></svg>Belegte Datenbasis — alle Anlagen im Original</div>
     <p>Jede Aussage dieses Berichts stützt sich auf professionelle, unabhängige Prüfwerkzeuge: Google PageSpeed Insights (Lighthouse), Screaming Frog SEO Spider, Otterly.AI sowie die live abgerufenen Dateien der Domain. Sämtliche Original-Reports, Tool-Screenshots und Live-Links sind als Anlagen beigefügt und an jeder Fundstelle direkt verlinkt.</p>
     <div class="row">
-      <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Hauptbericht v2.0 (PDF)</a>
       <a class="ev" href="evidence/pagespeed-desktop.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>PageSpeed Desktop</a>
       <a class="ev" href="evidence/pagespeed-mobile.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>PageSpeed Mobile</a>
       <a class="ev" href="evidence/otterly-crawlability-audit.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Otterly Crawlability</a>
       <a class="ev" href="evidence/otterly-content-analysis.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Otterly Content-Analyse</a>
       <a class="ev" href="evidence/otterly-brand-report.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Otterly Brand-Report</a>
-      <a class="ev" href="#nachweise"><svg class="ic"><use href="#i-attach"/></svg>Alle 24 Anlagen (Kapitel 10)</a>
+      <a class="ev" href="#nachweise"><svg class="ic"><use href="#i-attach"/></svg>Alle 23 Anlagen (Kapitel 10)</a>
     </div>
   </div>
 </header>
@@ -412,7 +413,6 @@ td.num{font-weight:600}
 
   <div class="ev-row">
     <span class="lbl">Nachweise</span>
-    <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Audit-Bericht v2 (PDF)</a>
     <a class="ev" href="evidence/otterly-crawlability-audit.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Otterly Crawlability-Audit</a>
     <a class="ev" href="evidence/pagespeed-desktop.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>PageSpeed Desktop</a>
     <a class="ev" href="evidence/pagespeed-mobile.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>PageSpeed Mobile</a>
@@ -476,7 +476,6 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
       <a class="ev" href="evidence/otterly-crawlability-audit.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Crawlability-Audit (PDF)</a>
       <a class="ev" href="evidence/otterly-server-access-check.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>Screenshot Server Access Check</a>
       <a class="ev" href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>robots.txt (live)</a>
-      <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Bericht, Kap. 3</a>
     </div>
   </div>
 </section>
@@ -492,13 +491,15 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
   <div class="ps-duo">
     <div class="panel">
       <div class="ps-h"><svg class="ic"><use href="#i-monitor"/></svg><h3>Desktop</h3><span class="pill p-ok">Sehr gut</span></div>
-      <p class="ps-sub">Report vom 05.07.2026, 22:48 Uhr · Lighthouse 13.4.0 · <a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=desktop" target="_blank" rel="noopener">Live-Report <svg class="ic"><use href="#i-ext"/></svg></a></p>
+      <p class="ps-sub">Report vom 05.07.2026, 22:48 Uhr · Lighthouse 13.4.0</p>
       <div class="gauges" data-scores="98,80,100,83" data-agentic="2"></div>
+      <a class="btn" href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=desktop" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>Live-Report bei Google PageSpeed öffnen<svg class="ic"><use href="#i-ext"/></svg></a>
     </div>
     <div class="panel">
       <div class="ps-h"><svg class="ic"><use href="#i-phone"/></svg><h3>Mobile</h3><span class="pill p-warn">Handlungsbedarf</span></div>
-      <p class="ps-sub">Report vom 05.07.2026, 22:45 Uhr · Moto G Power, Slow 4G · <a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=mobile" target="_blank" rel="noopener">Live-Report <svg class="ic"><use href="#i-ext"/></svg></a></p>
+      <p class="ps-sub">Report vom 05.07.2026, 22:45 Uhr · Moto G Power, Slow 4G</p>
       <div class="gauges" data-scores="82,84,92,83" data-agentic="2"></div>
+      <a class="btn" href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=mobile" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>Live-Report bei Google PageSpeed öffnen<svg class="ic"><use href="#i-ext"/></svg></a>
     </div>
   </div>
 
@@ -665,11 +666,11 @@ Web-Cyber-Sicherheit-…-18_03_20.pptx</span></pre>
     <div class="pane">
       <div class="pane-h h-ok"><svg class="ic"><use href="#i-check"/></svg>robots.txt — Soll-Zustand: Korrektur und Vereinfachung</div>
       <div class="pane-b">
-        <p>Führenden „/“ ergänzen; zusätzlich lassen sich die über 60 einzelnen .pptx-Zeilen durch ein Wildcard-Muster (RFC 9309) ersetzen:</p>
+        <p>Führenden „/“ ergänzen; zusätzlich lassen sich die 61 einzelnen .pptx-Zeilen durch ein Wildcard-Muster (RFC 9309) ersetzen:</p>
 <pre class="code">Disallow: <span class="ins">/</span>wp-content/uploads/2019/08/Social-
 Web-Cyber-Sicherheit-…-18_03_20.pptx
 
-<span class="cm"># oder alle 60+ Zeilen ersetzen durch:</span>
+<span class="cm"># oder alle 61 Zeilen ersetzen durch:</span>
 Disallow: <span class="ins">/wp-content/uploads/2019/08/*.pptx</span></pre>
       </div>
     </div>
@@ -736,28 +737,30 @@ Generated by Yoast SEO v27.6, …
       <h3 style="margin-bottom:0"><svg class="ic"><use href="#i-code"/></svg>Einsatzfertige Soll-Fassung: <code>robots.txt</code></h3>
       <button class="copybtn" type="button" data-copy="robots-full"><svg class="ic"><use href="#i-clip"/></svg>Kopieren</button>
     </div>
-    <p class="note" style="margin-top:8px">Konsolidierte Gesamt-Fassung mit allen Korrekturen aus diesem Kapitel: Syntaxfehler behoben (Wildcard statt 60+ fehleranfälliger Einzelzeilen), KI-Crawler-Freigaben vollständig — inklusive der ergänzenswerten Applebot-Extended und Meta-ExternalAgent — sowie vereinheitlichte Sitemap-Angabe. Vor dem Einspielen mit etwaigen weiteren bestehenden Regeln der Domain zusammenführen.</p>
-<pre class="code" id="robots-full"># robots.txt - norbert-pohlmann.com (Soll-Fassung)
+    <p class="note" style="margin-top:8px">Vollständige, direkt einspielbare Fassung — Zeile für Zeile aus der <a href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener">Live-Datei der Domain</a> (101 Zeilen, Stand 05.07.2026) übernommen und um genau drei Punkte korrigiert: die 61 fehleranfälligen .pptx-Einzelzeilen (inklusive der defekten Zeile 14) sind durch ein RFC-9309-Wildcard ersetzt, die im Bericht empfohlenen Crawler Applebot-Extended und Meta-ExternalAgent ergänzt, und die Sitemap-Angabe mit der llms.txt vereinheitlicht. Alle übrigen Regeln — inklusive SeobilityBot mit Crawl-delay — bleiben unverändert erhalten.</p>
+<pre class="code" id="robots-full"># robots.txt — norbert-pohlmann.com
+# Soll-Fassung auf Basis der Live-Datei vom 05.07.2026 (101 Zeilen)
 
 User-agent: *
 Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /lostpassword/
+Disallow: /resetpass/
+Disallow: /register/
+Disallow: /registrierung/
 Allow: /wp-admin/admin-ajax.php
 
-# Ersetzt die 60+ einzelnen .pptx-Zeilen (inkl. der fehlerhaften Zeile 14):
+# Ersetzt die 61 einzelnen .pptx-Zeilen der Live-Datei (Zeilen 12-72),
+# darunter die fehlerhafte Zeile 14 ohne fuehrenden "/".
+# Wildcards sind Teil von RFC 9309 und werden von Google unterstuetzt:
 Disallow: /wp-content/uploads/2019/08/*.pptx
 
-# ---- KI-Crawler: ausdruecklich erlaubt ----
+# ---- KI-Crawler (aus der Live-Datei uebernommen) ----
+
 # OpenAI
 User-agent: GPTBot
 User-agent: ChatGPT-User
 User-agent: OAI-SearchBot
-Allow: /
-
-# Anthropic
-User-agent: ClaudeBot
-User-agent: anthropic-ai
-User-agent: claude-web
-User-agent: Claude-User
 Allow: /
 
 # Perplexity
@@ -765,17 +768,28 @@ User-agent: PerplexityBot
 User-agent: Perplexity-User
 Allow: /
 
-# Google (Gemini) / weitere
-User-agent: Google-Extended
-User-agent: GoogleOther
+# Anthropic / Claude
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
 Allow: /
 
-# Ergaenzt gemaess Empfehlung dieses Berichts:
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Ergaenzung gemaess Kapitel 05 dieses Berichts:
 User-agent: Applebot-Extended
 User-agent: Meta-ExternalAgent
 Allow: /
 
-# Einheitliche Sitemap-Angabe (identisch mit llms.txt):
+# SEO-Tool
+User-agent: SeobilityBot
+Allow: /
+Crawl-delay: 10
+
+# Vereinheitlicht mit der llms.txt (Live-Datei bisher: /sitemap.xml):
 Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <p class="note" style="margin-top:10px"><strong>Wichtig:</strong> Die robots.txt allein hebt die Blockade aus <a href="#kernbefund">Kapitel 02</a> nicht auf — zuerst müssen die User-Agent-Sperren auf Server-/Firewall-Ebene entfernt werden (Maßnahme 1). Diese Datei stellt danach sicher, dass keine zweite Hürde greift.</p>
   </div>
@@ -785,8 +799,8 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
       <h3 style="margin-bottom:0"><svg class="ic"><use href="#i-code"/></svg>Einsatzfertige Soll-Fassung: <code>llms.txt</code></h3>
       <button class="copybtn" type="button" data-copy="llms-full"><svg class="ic"><use href="#i-clip"/></svg>Kopieren</button>
     </div>
-    <p class="note" style="margin-top:8px">Manuell kuratierte Fassung nach dem llms.txt-Standard: alle drei Defekte behoben (vollständige Ziel-URLs, keine Escape-Zeichen, keine Ein-Buchstaben-Tags) und die wichtigsten Glossarbegriffe mit Kurzbeschreibung gelistet. Die Begriffs-URLs stammen aus dem Screaming-Frog-Crawl dieser Analyse; die Liste lässt sich redaktionell beliebig erweitern.</p>
-<pre class="code" id="llms-full"># Prof. Dr. Norbert Pohlmann - Cyber-Sicherheit
+    <p class="note" style="margin-top:8px">Manuell kuratierte Fassung nach dem llms.txt-Standard, die die defekte Yoast-Generierung ersetzt: alle drei Defekte behoben (vollständige Ziel-URLs, keine Escape-Zeichen, keine Ein-Buchstaben-Tags), 19 Kern-Glossarbegriffe mit Kurzbeschreibung sowie die fünf echten Kategorien der <a href="https://norbert-pohlmann.com/llms.txt" target="_blank" rel="noopener">Live-Datei</a>. Alle Begriffs-URLs sind durch den Screaming-Frog-Crawl dieser Analyse verifiziert; die Liste lässt sich redaktionell beliebig erweitern.</p>
+<pre class="code" id="llms-full"># Prof. Dr. Norbert Pohlmann — Cyber-Sicherheit
 
 &gt; Glossar, Artikel und Lehrmaterial des Informatikprofessors für
 &gt; Cyber-Sicherheit und Leiters des Instituts für Internet-Sicherheit if(is).
@@ -798,18 +812,18 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
 - [Ransomware](https://norbert-pohlmann.com/glossar-cyber-sicherheit/ransomware/): Funktionsweise, Verbreitungswege, Schutzmaßnahmen
 - [Phishing](https://norbert-pohlmann.com/glossar-cyber-sicherheit/phishing/): Angriffsformen, Erkennung, Prävention
 - [Firewall-System](https://norbert-pohlmann.com/glossar-cyber-sicherheit/firewall-system-2/): Architektur, Regelwerke, Grenzen
-- [Verschlüsselung](https://norbert-pohlmann.com/glossar-cyber-sicherheit/verschluesselung/): Symmetrisch/asymmetrisch, Einsatzfelder
+- [Verschlüsselung](https://norbert-pohlmann.com/glossar-cyber-sicherheit/verschluesselung/): Symmetrische und asymmetrische Verfahren, Einsatzfelder
 - [IPSec-Verschlüsselung](https://norbert-pohlmann.com/glossar-cyber-sicherheit/ipsec-verschluesselung-3/): Protokolle, VPN-Einsatz
 - [Man-in-the-Middle-Angriff (MITM)](https://norbert-pohlmann.com/glossar-cyber-sicherheit/man-in-the-middle-angriff-mitm/): Angriffsszenarien, Gegenmaßnahmen
 - [Advanced Persistent Threat (APT)](https://norbert-pohlmann.com/glossar-cyber-sicherheit/advanced-persistent-threat-apt/): Merkmale, Phasen, Detektion
 - [Cyber Threat Intelligence (CTI)](https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-threat-intelligence-cti/): Quellen, Nutzung, Reifegrade
 - [Cyber-Sicherheitsgefahr](https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheitsgefahr/): Gefahrenkategorien und Bewertung
-- [Cyber-Sicherheitsmassnahme](https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheitsmassnahme/): Technische und organisatorische Maßnahmen
+- [Cyber-Sicherheitsmaßnahme](https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheitsmassnahme/): Technische und organisatorische Maßnahmen
 - [IT-Sicherheitsaudit](https://norbert-pohlmann.com/glossar-cyber-sicherheit/it-sicherheitsaudit/): Ablauf, Standards, Nutzen
 - [Maschinelles Lernen](https://norbert-pohlmann.com/glossar-cyber-sicherheit/maschinelles-lernen/): Grundlagen, Einsatz in der Cyber-Sicherheit
 - [Honeypot](https://norbert-pohlmann.com/glossar-cyber-sicherheit/honeypot/): Typen, Einsatzzwecke, Grenzen
 - [Spyware](https://norbert-pohlmann.com/glossar-cyber-sicherheit/spyware/): Funktionsweise, Erkennung, Entfernung
-- [Keylogger](https://norbert-pohlmann.com/glossar-cyber-sicherheit/keylogger/): Hardware/Software-Varianten, Schutz
+- [Keylogger](https://norbert-pohlmann.com/glossar-cyber-sicherheit/keylogger/): Hardware- und Software-Varianten, Schutz
 - [Bug-Bounty-Programm](https://norbert-pohlmann.com/glossar-cyber-sicherheit/bug-bounty-programm/): Aufbau, Nutzen, Best Practices
 - [Trusted Computing](https://norbert-pohlmann.com/glossar-cyber-sicherheit/trusted-computing-2/): Konzepte, TPM, Anwendungen
 
@@ -818,6 +832,8 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
 - [Glossar Cyber-Sicherheit](https://norbert-pohlmann.com/category/glossar-cyber-sicherheit/): Alle Glossarbegriffe im Überblick
 - [Artikel](https://norbert-pohlmann.com/category/artikel/): Fachartikel und Veröffentlichungen
 - [Vorträge](https://norbert-pohlmann.com/category/vortraege/): Vorträge und Präsentationen
+- [News](https://norbert-pohlmann.com/category/news/): Aktuelle Meldungen
+- [Studien-Gutachten](https://norbert-pohlmann.com/category/gutachten/): Studien und Gutachten
 
 ## Optional
 
@@ -829,7 +845,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <a class="ev" href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>robots.txt (live)</a>
     <a class="ev" href="https://norbert-pohlmann.com/llms.txt" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>llms.txt (live)</a>
     <a class="ev" href="evidence/llms-txt-original.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>Screenshot llms.txt (Original)</a>
-    <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Bericht, Kap. 5–6</a>
   </div>
 </section>
 
@@ -865,7 +880,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
   <div class="ev-row">
     <span class="lbl">Nachweise</span>
     <a class="ev" href="https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheit-2/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>Glossarseite (live)</a>
-    <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Bericht, Kap. 4 (Live-Verifikation)</a>
   </div>
 </section>
 
@@ -912,7 +926,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <div class="ev-row">
       <span class="lbl">Nachweise</span>
       <a class="ev" href="evidence/otterly-content-analysis.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Content-Analyse (PDF)</a>
-      <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Bericht, Kap. 9</a>
     </div>
   </div>
 </section>
@@ -963,7 +976,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
         <div class="ev-row">
           <span class="lbl">Nachweise</span>
           <a class="ev" href="evidence/otterly-brand-report.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Brand-Report (PDF)</a>
-          <a class="ev" href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Bericht, Kap. 10</a>
         </div>
       </div>
     </div>
@@ -1011,7 +1023,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <div class="panel">
       <h3><svg class="ic"><use href="#i-doc"/></svg>Reports (PDF)</h3>
       <ul class="app">
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/seo-geo-audit-bericht-v2.pdf" target="_blank">SEO- &amp; GEO-Audit-Bericht v2.0 (Hauptbericht, 17 Seiten)</a></li>
         <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-desktop.pdf" target="_blank">PageSpeed Insights — Desktop (22:48 Uhr, 39 Seiten)</a></li>
         <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-mobile.pdf" target="_blank">PageSpeed Insights — Mobile (22:45 Uhr, 37 Seiten)</a></li>
         <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-crawlability-audit.pdf" target="_blank">Otterly.AI — Crawlability-Audit (Server Access + robots.txt Check)</a></li>
@@ -1066,7 +1077,7 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     return '<div class="gauge"><svg viewBox="0 0 72 72" role="img" aria-label="'+lbl+': '+txt+'">'+
       '<circle cx="36" cy="36" r="'+r+'" fill="none" stroke="#e9edf1" stroke-width="5.5"/>'+
       '<circle cx="36" cy="36" r="'+r+'" fill="none" stroke="'+col+'" stroke-width="5.5" stroke-linecap="round" stroke-dasharray="'+c+'" stroke-dashoffset="'+off+'" transform="rotate(-90 36 36)"/>'+
-      '<text x="36" y="42" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="17" font-weight="700" fill="'+col+'">'+txt+'</text>'+
+      '<text x="36" y="42" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="17" font-weight="700" fill="'+col+'">'+txt+'</text>'+
       '</svg><span class="g-lbl">'+lbl+'</span></div>';
   }
   document.querySelectorAll(".gauges").forEach(function(el){
