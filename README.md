@@ -1,4 +1,4 @@
-# SEO- & GEO-Audit — norbert-pohlmann.com (Glossar Cyber-Sicherheit)
+# SEO- & GEO-Audit – norbert-pohlmann.com (Glossar Cyber-Sicherheit)
 
 Professionell aufbereitete Ergebnisseite des SEO- und GEO-Audits für
 [https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheit-2/](https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheit-2/)
@@ -7,8 +7,8 @@ Professionell aufbereitete Ergebnisseite des SEO- und GEO-Audits für
 
 ## Inhalt
 
-- `index.html` — interaktive Ergebnisseite (eine HTML-Datei)
-- `evidence/` — alle Original-Nachweise:
+- `index.html` – interaktive Ergebnisseite (eine HTML-Datei)
+- `evidence/` – alle Original-Nachweise:
   - PageSpeed Insights Desktop & Mobile (PDF)
   - Otterly.AI Crawlability-Audit, Content-Analyse, Brand-Report (PDF)
   - 10 Screaming-Frog-Screenshots + Otterly Server Access Check + llms.txt-Original

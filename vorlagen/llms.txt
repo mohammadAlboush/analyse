@@ -1,4 +1,4 @@
-# Prof. Dr. Norbert Pohlmann — Cyber-Sicherheit
+# Prof. Dr. Norbert Pohlmann – Cyber-Sicherheit
 
 > Glossar, Artikel und Lehrmaterial des Informatikprofessors für
 > Cyber-Sicherheit und Leiters des Instituts für Internet-Sicherheit if(is).

@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO- &amp; GEO-Audit — norbert-pohlmann.com | Glossar Cyber-Sicherheit</title>
-<meta name="description" content="Technischer Prüfbericht: SEO- und GEO-Audit für norbert-pohlmann.com (Glossar Cyber-Sicherheit) mit vollständig verlinkten Nachweisen — PageSpeed, Screaming Frog, Otterly.AI, robots.txt, llms.txt.">
+<title>SEO- &amp; GEO-Audit – norbert-pohlmann.com | Glossar Cyber-Sicherheit</title>
+<meta name="description" content="Technischer Prüfbericht: SEO- und GEO-Audit für norbert-pohlmann.com (Glossar Cyber-Sicherheit) mit vollständig verlinkten Nachweisen – PageSpeed, Screaming Frog, Otterly.AI, robots.txt, llms.txt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Mulish:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#f6f7f8;
+  --paper:#f4f7f8;
   --surface:#ffffff;
   --ink:#182430;
   --ink-2:#4c5866;
   --ink-3:#606d7b;
   --line:#e3e7ec;
   --line-2:#d3dae1;
-  --accent:#1c5a80;
-  --accent-ink:#134159;
-  --accent-tint:#eaf2f7;
-  --side-bg:#0f1c29;
+  --accent:#0f6180;
+  --accent-ink:#0b4a63;
+  --accent-tint:#e7f2f6;
+  --side-bg:#0d2231;
   --side-ink:#c8d3de;
-  --side-dim:#7d8ea0;
-  --crit:#a32330;      --crit-tint:#f9eced;
-  --warn:#95610f;      --warn-tint:#f8f1e4;
-  --ok:#1d6b4a;        --ok-tint:#e9f4ee;
+  --side-dim:#7e99a9;
+  --crit:#ae2437;      --crit-tint:#f9eced;
+  --warn:#8a5d0e;      --warn-tint:#f8f1e4;
+  --ok:#187a50;        --ok-tint:#e9f4ee;
   --code-bg:#f1f3f5;
   --sans:"Mulish","Segoe UI",system-ui,sans-serif;
   --serif:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
@@ -33,7 +33,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-padding-top:24px}
-body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.7}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.62}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:var(--accent-ink)}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:700;letter-spacing:-.015em;line-height:1.25;text-wrap:balance}
@@ -54,7 +54,7 @@ code{font-family:var(--mono);font-size:.88em;background:var(--code-bg);border-ra
 .toc a .n{font-family:var(--mono);font-size:11px;color:var(--side-dim);width:18px;flex:none}
 .toc a:hover{background:rgba(255,255,255,.06);color:#fff}
 .toc a.on{background:rgba(255,255,255,.1);color:#fff}
-.toc a.on .n{color:#9fc2d8}
+.toc a.on .n{color:#8fd0e2}
 .side-foot{padding:20px 30px 0;border-top:1px solid rgba(255,255,255,.09);font-size:11.5px;color:var(--side-dim);line-height:1.7}
 .side-foot strong{color:var(--side-ink);font-weight:500}
 
@@ -62,12 +62,12 @@ code{font-family:var(--mono);font-size:.88em;background:var(--code-bg);border-ra
 .topbar{display:none}
 
 /* cover */
-.cover{padding:64px 0 44px;border-bottom:1px solid var(--line-2)}
+.cover{padding:44px 0 32px;border-bottom:1px solid var(--line-2)}
 .cover .eyebrow{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 .cover .eyebrow::after{content:"";height:1px;background:var(--line-2);flex:1}
-.cover h1{font-size:clamp(28px,3.6vw,40px);margin:18px 0 12px;max-width:21ch}
+.cover h1{font-size:clamp(26px,3.3vw,36px);margin:14px 0 10px;max-width:24ch}
 .cover .sub{font-size:16px;color:var(--ink-2);max-width:68ch}
-.cover-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:34px;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--surface)}
+.cover-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:22px;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:var(--surface)}
 .cover-meta>div{padding:16px 20px;border-left:1px solid var(--line)}
 .cover-meta>div:first-child{border-left:none}
 .cover-meta .k{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
@@ -76,22 +76,22 @@ code{font-family:var(--mono);font-size:.88em;background:var(--code-bg);border-ra
 @media(max-width:760px){.cover-meta>div{border-left:none;border-top:1px solid var(--line)}.cover-meta>div:first-child{border-top:none}}
 
 /* sources highlight */
-.sources{margin-top:16px;background:var(--accent-tint);border:1px solid #c3d9e7;border-radius:8px;padding:20px 22px}
+.sources{margin-top:12px;background:var(--accent-tint);border:1px solid #c2dde8;border-radius:8px;padding:16px 20px}
 .sources .s-h{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--accent-ink);margin-bottom:6px}
 .sources .s-h .ic{font-size:16px;color:var(--accent)}
-.sources p{font-size:13.5px;color:var(--accent-ink);max-width:88ch;margin-bottom:12px}
+.sources p{font-size:13.5px;color:var(--accent-ink);max-width:92ch;margin-bottom:10px}
 .sources .row{display:flex;flex-wrap:wrap;gap:8px}
 .sources .ev{background:#fff}
 
 /* sections */
-section{padding-top:58px}
-.sec-head{margin-bottom:10px}
+section{padding-top:40px}
+.sec-head{margin-bottom:6px}
 .sec-head .kap{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.sec-head h2{font-size:clamp(21px,2.4vw,27px);margin-top:8px}
-.sec-lead{color:var(--ink-2);max-width:74ch;margin-bottom:26px}
-.panel{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:26px 28px}
-.panel+.panel,.panel+.acc,.acc+.panel{margin-top:14px}
-.panel h3{font-size:16.5px;margin-bottom:14px}
+.sec-head h2{font-size:clamp(20px,2.3vw,25px);margin-top:5px}
+.sec-lead{color:var(--ink-2);max-width:76ch;margin-bottom:16px}
+.panel{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:20px 22px}
+.panel+.panel,.panel+.acc,.acc+.panel,.ps-duo+.panel,.duo+.panel,.ps-duo+.duo,.duo+.duo{margin-top:12px}
+.panel h3{font-size:16px;margin-bottom:10px}
 .panel h3 .ic{color:var(--accent);margin-right:6px;font-size:17px}
 .note{font-size:13.5px;color:var(--ink-2)}
 
@@ -100,7 +100,7 @@ section{padding-top:58px}
 .p-crit{background:var(--crit-tint);color:var(--crit);border-color:#eccdd1}
 .p-warn{background:var(--warn-tint);color:var(--warn);border-color:#ead9b8}
 .p-ok{background:var(--ok-tint);color:var(--ok);border-color:#c5dfd0}
-.p-info{background:var(--accent-tint);color:var(--accent);border-color:#c3d9e7}
+.p-info{background:var(--accent-tint);color:var(--accent);border-color:#c2dde8}
 .p-mut{background:#eef1f4;color:var(--ink-2);border-color:#dfe3e9}
 .tag{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:5px}
 .t-crit{background:var(--crit-tint);color:var(--crit)}
@@ -110,7 +110,7 @@ section{padding-top:58px}
 .t-mut{background:#eef1f4;color:var(--ink-2)}
 
 /* evidence chips */
-.ev-row{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.ev-row{margin-top:14px;padding-top:11px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .ev-row .lbl{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-right:4px}
 .ev{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:500;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-2);padding:5px 12px;border-radius:6px;text-decoration:none}
 .ev .ic{font-size:13px;color:var(--ink-3)}
@@ -118,13 +118,13 @@ section{padding-top:58px}
 .ev:hover .ic{color:var(--accent)}
 
 /* executive summary */
-.keyfinding{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:26px 30px;margin-bottom:22px}
+.keyfinding{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:20px 24px;margin-bottom:14px}
 .keyfinding .kf-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--crit);margin-bottom:12px}
 .keyfinding .kf-tag .ic{font-size:15px}
 .keyfinding h3{font-size:19px;margin-bottom:10px}
 .keyfinding p{color:var(--ink-2);max-width:78ch}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px}
-.tile{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:18px 20px;display:flex;flex-direction:column;gap:7px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:10px}
+.tile{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:5px}
 .tile .t-k{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);line-height:1.45}
 .tile .t-v{font-size:21px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .tile .t-n{font-size:12.5px;color:var(--ink-2);line-height:1.5;flex:1}
@@ -137,7 +137,7 @@ section{padding-top:58px}
 .pane .pane-h .ic{font-size:15px}
 .pane .pane-h.h-crit{color:var(--crit);background:var(--crit-tint)}
 .pane .pane-h.h-ok{color:var(--ok);background:var(--ok-tint)}
-.pane .pane-b{padding:18px 20px}
+.pane .pane-b{padding:15px 18px}
 .pane .pane-b>p{font-size:13.5px;color:var(--ink-2);margin-bottom:14px}
 .bots{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:7px}
 .bot{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:5px;padding:6px 10px;font-family:var(--mono);font-size:11.5px;color:var(--ink-2);background:var(--paper)}
@@ -151,8 +151,8 @@ pre.code{background:var(--code-bg);border:1px solid var(--line);border-radius:6p
 .filebox .fb-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .filebox .fb-h code{font-weight:600}
 .fb-actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
-.copybtn{display:inline-flex;align-items:center;gap:7px;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--accent-ink);background:var(--accent-tint);border:1px solid #c3d9e7;border-radius:6px;padding:5px 12px;cursor:pointer;text-decoration:none}
-.copybtn:hover{background:#dcebf4}
+.copybtn{display:inline-flex;align-items:center;gap:7px;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--accent-ink);background:var(--accent-tint);border:1px solid #c2dde8;border-radius:6px;padding:5px 12px;cursor:pointer;text-decoration:none}
+.copybtn:hover{background:#d9eaf1}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;background:var(--accent);border-radius:7px;padding:8px 16px;text-decoration:none;margin-top:16px}
 .btn:hover{background:var(--accent-ink);color:#fff}
 .btn .ic{font-size:14px}
@@ -200,11 +200,11 @@ td.num{font-weight:600}
 .acc{background:var(--surface);border:1px solid var(--line-2);border-radius:8px;overflow:hidden}
 .acc details{border-top:1px solid var(--line)}
 .acc details:first-child{border-top:none}
-.acc summary{cursor:pointer;padding:15px 22px;font-weight:600;font-size:14px;list-style:none;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.acc summary{cursor:pointer;padding:12px 18px;font-weight:600;font-size:14px;list-style:none;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .acc summary::-webkit-details-marker{display:none}
 .acc summary .chev{margin-left:auto;color:var(--ink-3);transition:transform .15s;font-size:15px}
 .acc details[open] summary .chev{transform:rotate(180deg)}
-.acc .d-body{padding:2px 22px 20px;color:var(--ink-2);font-size:13.5px;max-width:88ch}
+.acc .d-body{padding:0 18px 16px;color:var(--ink-2);font-size:13.5px;max-width:88ch}
 .acc .d-body p+p{margin-top:8px}
 .acc .d-body .q{border-left:2px solid var(--line-2);padding-left:14px;font-style:italic;color:var(--ink-2)}
 .acc summary .ev{font-weight:500}
@@ -213,7 +213,7 @@ td.num{font-weight:600}
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:900px){.pn{grid-template-columns:1fr}}
 .pn ul{list-style:none}
-.pn li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13.8px;color:var(--ink-2)}
+.pn li{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.8px;color:var(--ink-2)}
 .pn li:last-child{border-bottom:none;padding-bottom:0}
 .pn li strong{color:var(--ink)}
 .pn li .ic{font-size:15px;margin-top:3px}
@@ -221,7 +221,7 @@ td.num{font-weight:600}
 .pn .neg li .ic{color:var(--crit)}
 
 /* score bars */
-.score{display:flex;align-items:center;gap:14px;padding:8px 0}
+.score{display:flex;align-items:center;gap:14px;padding:6px 0}
 .score+.score{border-top:1px solid var(--line)}
 .score .s-k{width:46%;font-size:13.5px;font-weight:500;flex:none;line-height:1.4}
 .score .s-k small{display:block;font-weight:400;color:var(--ink-3);font-size:11.5px}
@@ -231,12 +231,12 @@ td.num{font-weight:600}
 .sc-ok i{background:var(--ok)} .sc-ok .s-v{color:var(--ok)}
 .sc-warn i{background:var(--warn)} .sc-warn .s-v{color:var(--warn)}
 .sc-acc i{background:var(--accent)} .sc-acc .s-v{color:var(--accent-ink)}
-.score-note{font-size:12.5px;color:var(--ink-3);margin:2px 0 10px;padding-left:calc(46% + 14px)}
+.score-note{font-size:12.5px;color:var(--ink-3);margin:0 0 8px;padding-left:calc(46% + 14px)}
 @media(max-width:700px){.score .s-k{width:38%}.score-note{padding-left:0}}
 
 /* roadmap */
 .rm{counter-reset:rm}
-.rm-item{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.rm-item{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)}
 .rm-item:first-child{border-top:none;padding-top:4px}
 .rm-item .no{counter-increment:rm;width:34px;height:34px;border-radius:50%;border:2px solid var(--line-2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink-2);background:var(--surface)}
 .rm-item .no::before{content:counter(rm)}
@@ -253,23 +253,23 @@ td.num{font-weight:600}
 .conclusion p{color:var(--ink-2);max-width:82ch}
 
 /* gallery */
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
 .shot{display:block;border:1px solid var(--line-2);border-radius:6px;overflow:hidden;background:var(--surface);text-decoration:none}
 .shot img{width:100%;height:112px;object-fit:cover;object-position:left top;display:block;border-bottom:1px solid var(--line);background:#fff}
-.shot span{display:block;padding:9px 12px;font-size:11.8px;font-weight:500;color:var(--ink-2);line-height:1.45}
+.shot span{display:block;padding:7px 10px;font-size:11.5px;font-weight:500;color:var(--ink-2);line-height:1.4}
 .shot:hover{border-color:var(--accent)}
 .shot:hover span{color:var(--accent)}
 
 /* appendix */
 .app{list-style:none}
-.app li{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.app li{display:flex;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 .app li:last-child{border-bottom:none}
 .app .ft{flex:none;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;padding:2px 7px;border-radius:4px;color:var(--ink-2);background:#eef1f4}
 .app .ft.f-pdf{color:var(--crit);background:var(--crit-tint)}
 .app .ft.f-img{color:var(--accent);background:var(--accent-tint)}
 .app .ft.f-live{color:var(--ok);background:var(--ok-tint)}
 
-.foot{margin-top:64px;padding-top:22px;border-top:1px solid var(--line-2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-3)}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--line-2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-3)}
 
 /* responsive: sidebar -> topbar */
 @media(max-width:1080px){
@@ -359,7 +359,7 @@ td.num{font-weight:600}
 <header class="cover">
   <div class="eyebrow">Technischer Prüfbericht · Version 2.0</div>
   <h1>SEO- &amp; GEO-Audit der Glossarseite „Cyber-Sicherheit“</h1>
-  <p class="sub">Konsolidierte Auswertung von sechs unabhängigen Prüfquellen mit eigener Live-Verifikation. Jeder Befund dieses Berichts ist mit dem Original-Nachweis verlinkt — Tool-Reports als PDF, Screenshots und Live-Analysen.</p>
+  <p class="sub">Konsolidierte Auswertung von sechs unabhängigen Prüfquellen mit eigener Live-Verifikation. Jeder Befund dieses Berichts ist mit dem Original-Nachweis verlinkt – Tool-Reports als PDF, Screenshots und Live-Analysen.</p>
   <div class="cover-meta">
     <div>
       <div class="k">Analysierte URL</div>
@@ -375,7 +375,7 @@ td.num{font-weight:600}
     </div>
   </div>
   <div class="sources">
-    <div class="s-h"><svg class="ic"><use href="#i-shield"/></svg>Belegte Datenbasis — alle Anlagen im Original</div>
+    <div class="s-h"><svg class="ic"><use href="#i-shield"/></svg>Belegte Datenbasis – alle Anlagen im Original</div>
     <p>Jede Aussage dieses Berichts stützt sich auf professionelle, unabhängige Prüfwerkzeuge: Google PageSpeed Insights (Lighthouse), Screaming Frog SEO Spider, Otterly.AI sowie die live abgerufenen Dateien der Domain. Sämtliche Original-Reports, Tool-Screenshots und Live-Links sind als Anlagen beigefügt und an jeder Fundstelle direkt verlinkt.</p>
     <div class="row">
       <a class="ev" href="evidence/pagespeed-desktop.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>PageSpeed Desktop</a>
@@ -388,26 +388,25 @@ td.num{font-weight:600}
   </div>
 </header>
 
-<!-- 01 -->
 <section id="summary">
   <div class="sec-head">
     <span class="kap">Kapitel 01</span>
     <h2>Executive Summary</h2>
   </div>
-  <p class="sec-lead">Die Glossarseite ist inhaltlich bereits nahe am GEO-Ideal — zitierfähige Definition, FAQ-Block, starke E-E-A-T-Signale. Der entscheidende Engpass liegt jedoch davor: KI-Crawler werden auf Server-Ebene ausgesperrt, sodass alle Content-Optimierungen aktuell wirkungslos bleiben.</p>
+  <p class="sec-lead">Die Glossarseite ist inhaltlich bereits nahe am GEO-Ideal – zitierfähige Definition, FAQ-Block, starke E-E-A-T-Signale. Der entscheidende Engpass liegt jedoch davor: KI-Crawler werden auf Server-Ebene ausgesperrt, sodass alle Content-Optimierungen aktuell wirkungslos bleiben.</p>
 
   <div class="keyfinding">
     <span class="kf-tag"><svg class="ic"><use href="#i-alert"/></svg>Kernbefund · Handlungsbedarf sofort</span>
     <h3>Alle 21 geprüften KI-Crawler werden auf Server-/Firewall-Ebene blockiert</h3>
-    <p>GPTBot, ClaudeBot, PerplexityBot, Google-Extended und weitere erhalten den Status <strong>„Disallow“</strong> — obwohl die robots.txt sie ausdrücklich per <code>Allow: /</code> freigibt. Der robots.txt-Check meldet „N/A“: Die Bot-Anfragen erreichen die Datei gar nicht erst. Solange die Blockade besteht, können ChatGPT, Perplexity, Gemini und Claude die Inhalte weder abrufen noch zitieren. <a href="#kernbefund">Details und Nachweise in Kapitel 02</a>.</p>
+    <p>GPTBot, ClaudeBot, PerplexityBot, Google-Extended und weitere erhalten den Status <strong>„Disallow“</strong> – obwohl die robots.txt sie ausdrücklich per <code>Allow: /</code> freigibt. Der robots.txt-Check meldet „N/A“: Die Bot-Anfragen erreichen die Datei gar nicht erst. Solange die Blockade besteht, können ChatGPT, Perplexity, Gemini und Claude die Inhalte weder abrufen noch zitieren. <a href="#kernbefund">Details und Nachweise in Kapitel 02</a>.</p>
   </div>
 
   <div class="tiles">
     <div class="tile"><span class="t-k">KI-Crawler-Zugänglichkeit</span><span class="t-v">21 / 21 blockiert</span><span class="t-n">Server-/Firewall-Ebene, robots.txt-Check „N/A“</span><span><span class="pill p-crit">Kritisch</span></span></div>
-    <div class="tile"><span class="t-k">Performance Mobile</span><span class="t-v">82 / 100</span><span class="t-n">LCP 4,4 s — Grenzwert 2,5 s deutlich überschritten</span><span><span class="pill p-warn">Handlungsbedarf</span></span></div>
+    <div class="tile"><span class="t-k">Performance Mobile</span><span class="t-v">82 / 100</span><span class="t-n">LCP 4,4 s – Grenzwert 2,5 s deutlich überschritten</span><span><span class="pill p-warn">Handlungsbedarf</span></span></div>
     <div class="tile"><span class="t-k">SEO-Technik</span><span class="t-v">83 / 100</span><span class="t-n">323 fehlende Canonicals, 5 fehlende Security-Header, 349 Links ohne Ankertext</span><span><span class="pill p-warn">Handlungsbedarf</span></span></div>
     <div class="tile"><span class="t-k">llms.txt &amp; robots.txt</span><span class="t-v">defekt / 1 Fehler</span><span class="t-n">llms.txt-Links ohne Ziel-URL, robots.txt-Syntaxfehler in Zeile 14</span><span><span class="pill p-warn">Handlungsbedarf</span></span></div>
-    <div class="tile"><span class="t-k">KI-Sichtbarkeit</span><span class="t-v">3 % Coverage</span><span class="t-n">Citation Share 4 % — Platz 3 hinter bsi.bund.de und Springer</span><span><span class="pill p-warn">Ausbaufähig</span></span></div>
+    <div class="tile"><span class="t-k">KI-Sichtbarkeit</span><span class="t-v">3 % Coverage</span><span class="t-n">Citation Share 4 % – Platz 3 hinter bsi.bund.de und Springer</span><span><span class="pill p-warn">Ausbaufähig</span></span></div>
     <div class="tile"><span class="t-k">Content-Qualität &amp; GEO-Readiness</span><span class="t-v">73 – 85 %</span><span class="t-n">100 % statisch lesbar, Metadaten und Technik je 100 %</span><span><span class="pill p-ok">Gut</span></span></div>
     <div class="tile"><span class="t-k">Performance Desktop · Best Practices</span><span class="t-v">98 · 100</span><span class="t-n">FCP 0,5 s · LCP 1,1 s · CLS 0</span><span><span class="pill p-ok">Sehr gut</span></span></div>
   </div>
@@ -420,19 +419,18 @@ td.num{font-weight:600}
   </div>
 </section>
 
-<!-- 02 -->
 <section id="kernbefund">
   <div class="sec-head">
     <span class="kap">Kapitel 02</span>
     <h2>Kernbefund: KI-Crawler-Blockade auf Server-Ebene</h2>
   </div>
-  <p class="sec-lead">Der Otterly-Crawlability-Audit prüft zweistufig: <strong>(1) Server Access Check</strong> — antwortet der Server dem Bot-User-Agent überhaupt? <strong>(2) robots.txt Check</strong> — was erlaubt die robots.txt? Das Ergebnis ist eindeutig und widersprüchlich zugleich.</p>
+  <p class="sec-lead">Der Otterly-Crawlability-Audit prüft zweistufig: <strong>(1) Server Access Check</strong> – antwortet der Server dem Bot-User-Agent überhaupt? <strong>(2) robots.txt Check</strong> – was erlaubt die robots.txt? Das Ergebnis ist eindeutig und widersprüchlich zugleich.</p>
 
   <div class="duo">
     <div class="pane">
-      <div class="pane-h h-crit"><svg class="ic"><use href="#i-bot"/></svg>Server Access Check — Realität: alle Bots blockiert</div>
+      <div class="pane-h h-crit"><svg class="ic"><use href="#i-bot"/></svg>Server Access Check – Realität: alle Bots blockiert</div>
       <div class="pane-b">
-        <p>Alle 21 geprüften Crawler erhalten Status „Disallow“; der robots.txt-Check meldet für alle Bots „N/A“ — die Anfragen werden vorgelagert abgewiesen.</p>
+        <p>Alle 21 geprüften Crawler erhalten Status „Disallow“; der robots.txt-Check meldet für alle Bots „N/A“ – die Anfragen werden vorgelagert abgewiesen.</p>
         <div class="bots">
           <span class="bot">GPTBot</span><span class="bot">ChatGPT-User</span><span class="bot">OAI-SearchBot</span>
           <span class="bot">ClaudeBot</span><span class="bot">anthropic-ai</span><span class="bot">PerplexityBot</span>
@@ -442,13 +440,13 @@ td.num{font-weight:600}
           <span class="bot">GrokBot</span><span class="bot">ImagesiftBot</span><span class="bot">Meta-ExternalFetcher</span>
           <span class="bot">Omgilibot</span>
         </div>
-        <p class="bots-foot">Insgesamt 21 geprüfte Crawler — sämtlich mit Status „Disallow“.</p>
+        <p class="bots-foot">Abgebildet sind die 19 im Report namentlich dokumentierten Crawler; insgesamt wurden 21 geprüft – sämtlich mit Status „Disallow“.</p>
       </div>
     </div>
     <div class="pane">
-      <div class="pane-h h-ok"><svg class="ic"><use href="#i-code"/></svg>robots.txt der Domain — Absicht: alle Bots erlaubt</div>
+      <div class="pane-h h-ok"><svg class="ic"><use href="#i-code"/></svg>robots.txt der Domain – Absicht: alle Bots erlaubt</div>
       <div class="pane-b">
-        <p>Dieselben Bots werden in der robots.txt ausdrücklich freigegeben — die Blockade greift also <em>vor</em> der robots.txt auf Server-/Firewall-Ebene:</p>
+        <p>Dieselben Bots werden in der robots.txt ausdrücklich freigegeben – die Blockade greift also <em>vor</em> der robots.txt auf Server-/Firewall-Ebene:</p>
 <pre class="code"><span class="cm"># KI-Crawler</span>
 <span class="cm"># OpenAI</span>
 User-agent: GPTBot
@@ -463,14 +461,14 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
 
 <span class="cm"># Perplexity / Google Gemini analog:</span>
 <span class="ins">Allow: /</span></pre>
-        <p style="margin-top:14px;margin-bottom:0"><strong>Live-Verifikation (05.07.2026):</strong> Ein direkter Abruf von Start- und Glossarseite war erfolgreich (Volltext inkl. Meta-Daten). Die Blockade ist demnach <strong>selektiv</strong> — sehr wahrscheinlich eine User-Agent-basierte Firewall- oder Bot-Protection-Regel (WAF, Hoster-Bot-Schutz oder Security-Plugin), die exakt die offiziellen Crawler-Kennungen trifft.</p>
+        <p style="margin-top:14px;margin-bottom:0"><strong>Live-Verifikation (05.07.2026):</strong> Ein direkter Abruf von Start- und Glossarseite war erfolgreich (Volltext inkl. Meta-Daten). Die Blockade ist demnach <strong>selektiv</strong> – sehr wahrscheinlich eine User-Agent-basierte Firewall- oder Bot-Protection-Regel (WAF, Hoster-Bot-Schutz oder Security-Plugin), die exakt die offiziellen Crawler-Kennungen trifft.</p>
       </div>
     </div>
   </div>
 
   <div class="panel" style="margin-top:14px">
     <h3><svg class="ic"><use href="#i-wrench"/></svg>Auswirkung und Behebung</h3>
-    <p style="margin-bottom:12px;font-size:14px"><strong>Auswirkung:</strong> ChatGPT (Suche), Perplexity, Gemini und Claude können die Glossarseiten nicht live abrufen — keine frischen Zitierungen, kein Ranking in KI-Antworten; llms.txt- und Content-Optimierungen bleiben wirkungslos. Der <a href="#brand">Brand-Report</a> bestätigt: Zitiert werden fast nur ältere bzw. indirekte Quellen der Domain, nicht die Glossarseiten.</p>
+    <p style="margin-bottom:12px;font-size:14px"><strong>Auswirkung:</strong> ChatGPT (Suche), Perplexity, Gemini und Claude können die Glossarseiten nicht live abrufen – keine frischen Zitierungen, kein Ranking in KI-Antworten; llms.txt- und Content-Optimierungen bleiben wirkungslos. Der <a href="#brand">Brand-Report</a> bestätigt: Zitiert werden fast nur ältere bzw. indirekte Quellen der Domain, nicht die Glossarseiten.</p>
     <p style="font-size:14px"><strong>Behebung:</strong> (1) Hoster bzw. Administrator beauftragen, Firewall-, WAF- und Security-Plugin-Regeln auf User-Agent-Sperren zu prüfen (typische Kandidaten: Hoster-Bot-Schutz, Cloudflare „Block AI Bots“, ModSecurity, Wordfence/Sucuri). (2) Die 21 Bot-User-Agents explizit freigeben. (3) Dreifache Verifikation: erneuter Otterly-Audit, Server-Logfile-Kontrolle (GPTBot/ClaudeBot mit Status 200?), Testabruf via <code>curl</code> mit Bot-User-Agent.</p>
     <div class="ev-row">
       <span class="lbl">Nachweise</span>
@@ -481,13 +479,12 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
   </div>
 </section>
 
-<!-- 03 -->
 <section id="performance">
   <div class="sec-head">
     <span class="kap">Kapitel 03</span>
-    <h2>Performance — Google PageSpeed Insights</h2>
+    <h2>Performance – Google PageSpeed Insights</h2>
   </div>
-  <p class="sec-lead">Desktop ist mit 98/100 nahezu perfekt. Mobil verfehlt der LCP mit 4,4 s den Google-Grenzwert von 2,5 s deutlich — Hauptursachen sind render-blockierende CSS-Ressourcen (−1.920 ms möglich) und unoptimierte Bilder (−202 KiB möglich).</p>
+  <p class="sec-lead">Desktop ist mit 98/100 nahezu perfekt. Mobil verfehlt der LCP mit 4,4 s den Google-Grenzwert von 2,5 s deutlich – Hauptursachen sind render-blockierende CSS-Ressourcen (-1.920 ms möglich) und unoptimierte Bilder (-202 KiB möglich).</p>
 
   <div class="ps-duo">
     <div class="panel">
@@ -513,22 +510,22 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
         <tr><td>Largest Contentful Paint (LCP)</td><td class="num">1,1 s</td><td class="num">4,4 s</td><td class="num">&lt; 2,5 s</td><td><span class="bad">deutlich überschritten</span></td></tr>
         <tr><td>Total Blocking Time (TBT)</td><td class="num">0 ms</td><td class="num">0 ms</td><td class="num">&lt; 200 ms</td><td><span class="good">bestanden</span></td></tr>
         <tr><td>Cumulative Layout Shift (CLS)</td><td class="num">0</td><td class="num">0</td><td class="num">&lt; 0,1</td><td><span class="good">bestanden</span></td></tr>
-        <tr><td>Speed Index</td><td class="num">0,5 s</td><td class="num">2,4 s</td><td class="num">—</td><td><span class="good">solide</span></td></tr>
+        <tr><td>Speed Index</td><td class="num">0,5 s</td><td class="num">2,4 s</td><td class="num">–</td><td><span class="good">solide</span></td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="panel">
-    <h3><svg class="ic"><use href="#i-phone"/></svg>Mobiler LCP — belegte Ursachen und Einsparpotenziale</h3>
+    <h3><svg class="ic"><use href="#i-phone"/></svg>Mobiler LCP – belegte Ursachen und Einsparpotenziale</h3>
     <div class="tw"><table>
       <thead><tr><th>Befund (PageSpeed-Original)</th><th>Detail</th><th class="num">Potenzial</th></tr></thead>
       <tbody>
-        <tr><td><strong>Render-blocking requests</strong></td><td>autoptimize-CSS 47,4 KiB / 600 ms · FontAwesome <code>all.css</code> (use.fontawesome.com) 12,5 KiB / 750 ms</td><td class="num bad">−1.920 ms</td></tr>
-        <tr><td><strong>Improve image delivery</strong></td><td><code>cyber-sicherheit-zusammenhang-768x461.png</code> 115,7 KiB (−97,3 KiB via WebP/AVIF + responsive) · Logo-Glossar 918 × 913 px ausgeliefert für 56 × 55 px Darstellung (−51,7 KiB)</td><td class="num bad">−202 KiB</td></tr>
-        <tr><td><strong>Reduce unused JavaScript</strong></td><td>autoptimize-Bundle</td><td class="num">−70 KiB</td></tr>
-        <tr><td><strong>Reduce unused CSS</strong></td><td>Report verweist explizit auf die WP-Rocket-Optionen „Remove Unused CSS“ und „Delay JavaScript execution“</td><td class="num">−52 KiB</td></tr>
-        <tr><td><strong>LCP-Element</strong></td><td>TOC-Link „2. Taxonomie …“ (ez-toc) · Element render delay 240 ms (Messwert)</td><td class="num">—</td></tr>
-        <tr><td><strong>Font display</strong></td><td>FontAwesome-Webfonts ohne <code>font-display: swap</code></td><td class="num">−20–30 ms</td></tr>
+        <tr><td><strong>Render-blocking requests</strong></td><td>autoptimize-CSS 47,4 KiB / 600 ms · FontAwesome <code>all.css</code> (use.fontawesome.com) 12,5 KiB / 750 ms</td><td class="num bad">-1.920 ms</td></tr>
+        <tr><td><strong>Improve image delivery</strong></td><td><code>cyber-sicherheit-zusammenhang-768x461.png</code> 115,7 KiB (-97,3 KiB via WebP/AVIF + responsive) · Logo-Glossar 918 × 913 px ausgeliefert für 56 × 55 px Darstellung (-51,7 KiB)</td><td class="num bad">-202 KiB</td></tr>
+        <tr><td><strong>Reduce unused JavaScript</strong></td><td>autoptimize-Bundle</td><td class="num">-70 KiB</td></tr>
+        <tr><td><strong>Reduce unused CSS</strong></td><td>Report verweist explizit auf die WP-Rocket-Optionen „Remove Unused CSS“ und „Delay JavaScript execution“</td><td class="num">-52 KiB</td></tr>
+        <tr><td><strong>LCP-Element</strong></td><td>TOC-Link „2. Taxonomie …“ (ez-toc) · Element render delay 240 ms (Messwert)</td><td class="num">–</td></tr>
+        <tr><td><strong>Font display</strong></td><td>FontAwesome-Webfonts ohne <code>font-display: swap</code></td><td class="num">-20–30 ms</td></tr>
       </tbody>
     </table></div>
     <p class="note" style="margin-top:14px"><strong>Maßnahmenpaket Mobile:</strong> WebP/AVIF und korrekte <code>srcset</code>-Größen · WP Rocket „Remove Unused CSS“ und „Delay JS“ aktivieren · FontAwesome lokal hosten bzw. auf ein Subset reduzieren · <code>preconnect</code> für verbleibende Drittquellen. Realistisches Ziel: <strong>LCP &lt; 2,5 s</strong>.</p>
@@ -536,7 +533,7 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
 
   <div class="panel">
     <h3><svg class="ic"><use href="#i-eye"/></svg>Accessibility und Agentic Browsing (GEO-relevant)</h3>
-    <p style="font-size:14px">KI-Agenten navigieren Seiten über den <strong>Accessibility-Tree</strong> — der Agentic-Browsing-Check (2/3) meldet diesen als „not well-formed“ und benennt exakt die Elemente aus der <a href="#live">Live-Analyse</a>: Navbar-Button ohne Namen, Menü- und Footer-Links ohne erkennbaren Namen. Weitere belegte Punkte: unzureichender Farbkontrast im ez-toc-Inhaltsverzeichnis, Links nur über Farbe unterscheidbar, fehlende <code>&lt;main&gt;</code>-Landmark, <code>tabindex="1"</code> (Mobile), zu kleine Touch-Targets (Desktop). <strong>Positiv bestanden:</strong> llms.txt-Formatcheck, CLS = 0, Überschriften-Reihenfolge, alt-Attribute vorhanden.</p>
+    <p style="font-size:14px">KI-Agenten navigieren Seiten über den <strong>Accessibility-Tree</strong> – der Agentic-Browsing-Check (2/3) meldet diesen als „not well-formed“ und benennt exakt die Elemente aus der <a href="#live">Live-Analyse</a>: Navbar-Button ohne Namen, Menü- und Footer-Links ohne erkennbaren Namen. Weitere belegte Punkte: unzureichender Farbkontrast im ez-toc-Inhaltsverzeichnis, Links nur über Farbe unterscheidbar, fehlende <code>&lt;main&gt;</code>-Landmark, <code>tabindex="1"</code> (Mobile), zu kleine Touch-Targets (Desktop). <strong>Positiv bestanden:</strong> llms.txt-Formatcheck, CLS = 0, Überschriften-Reihenfolge, alt-Attribute vorhanden.</p>
     <div class="ev-row">
       <span class="lbl">Nachweise</span>
       <a class="ev" href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=desktop" target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg>PageSpeed Desktop (live)</a>
@@ -547,13 +544,12 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
   </div>
 </section>
 
-<!-- 04 -->
 <section id="crawl">
   <div class="sec-head">
     <span class="kap">Kapitel 04</span>
-    <h2>Technischer SEO-Crawl — Screaming Frog</h2>
+    <h2>Technischer SEO-Crawl – Screaming Frog</h2>
   </div>
-  <p class="sec-lead">Vollständiger Domain-Crawl über 456 URLs. Ergebnisleiste des Tools: <strong>Fehler: 1 · Warnungen: 17 · Gelegenheiten: 17 · Gesamt: 35 Problemtypen</strong>. Die Tabelle zeigt die priorisierten Befunde; darunter die Original-Beschreibungen des Tools inklusive Behebungsempfehlung.</p>
+  <p class="sec-lead">Der Crawl erfasst technisch die gesamte Domain (456 URLs, Ergebnisleiste: Fehler 1 · Warnungen 17 · Gelegenheiten 17). Ziel dieser Analyse ist jedoch der bestmögliche Glossar-Artikel – entscheidend ist daher, welche Befunde die analysierte Seite selbst betreffen. Die Domain-Zahlen dienen als Kontext.</p>
 
   <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:14px">
     <div class="tile"><span class="t-k">Gecrawlte URLs</span><span class="t-v">456</span></div>
@@ -564,7 +560,22 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
   </div>
 
   <div class="panel">
-    <h3><svg class="ic"><use href="#i-search"/></svg>Priorisierte Befundtabelle</h3>
+    <h3><svg class="ic"><use href="#i-eye"/></svg>Relevanz für den analysierten Eintrag</h3>
+    <p class="note" style="margin-bottom:8px">Diese Crawl-Befunde betreffen die Seite <code>cyber-sicherheit-2</code> unmittelbar und sind für die Optimierung des Artikels vorrangig:</p>
+    <div class="pn" style="grid-template-columns:1fr">
+      <ul>
+        <li><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg><span><strong>Canonical fehlt</strong> – im Head der Seite live verifiziert (<a href="#live">Kapitel 06, Befund C</a>); bei der historisch gewachsenen „-2“-URL ein reales Duplicate-Content-Risiko.</span></li>
+        <li><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg><span><strong>Fünf Security-Header fehlen</strong> – sitewide und damit auch auf dieser URL; zentral in einer Maßnahme behebbar.</span></li>
+        <li><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg><span><strong>Interne Links ohne Ankertext</strong> – betrifft die Kachel-Navigation und verlinkten Bilder der Seite; Ankertexte sind zugleich Kontextsignal für LLMs.</span></li>
+        <li><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg><span><strong>H1 verwässert</strong> – die H1 der Seite enthält den Autorennamen statt der Suchintention (<a href="#live">Kapitel 06, Befund A</a>); domain-weit meldet der Crawl zudem 153 überlange H1.</span></li>
+        <li><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg><span><strong>Überschriften-Struktur</strong> – die Abschnittsüberschriften im Artikeltext sind nur Fettdruck statt h2/h3; die vorhandenen Template-Überschriften sind zwar sauber hierarchisch (daher der Otterly-Teilscore 30/30 in Kapitel 07), die inhaltliche Gliederung bleibt für Maschinen dennoch unsichtbar (<a href="#live">Kapitel 06, Befund B</a>).</span></li>
+      </ul>
+    </div>
+    <p class="note" style="margin-top:10px">Die übrigen Befunde der folgenden Tabelle betreffen überwiegend andere URLs der Domain und sind für diesen Eintrag zunächst nachrangig; das Bild-Thema (über 100 KB) ist für diese Seite bereits durch die LCP-Maßnahmen in Kapitel 03 abgedeckt.</p>
+  </div>
+
+  <div class="panel">
+    <h3><svg class="ic"><use href="#i-search"/></svg>Befundtabelle der Gesamtdomain (Kontext)</h3>
     <div class="tw"><table>
       <thead><tr><th>Befund (Problemname lt. Tool)</th><th>Typ</th><th class="num">URLs</th><th style="min-width:160px">Anteil</th><th>Priorität</th></tr></thead>
       <tbody>
@@ -591,7 +602,7 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
       <summary>Canonicals: Fehlende <span class="tag t-crit">323 URLs · 91,5 %</span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="d-body">
         <p class="q">„Wenn auf einer Seite keine kanonische URL angegeben ist, ermittelt Google die seiner Meinung nach beste Version oder URL. Dies kann zu einer Unvorhersehbarkeit des Rankings führen, wenn mehrere Versionen entdeckt werden.“</p>
-        <p><strong>Einordnung:</strong> Bei den historisch gewachsenen „-2“-Duplikat-URLs (<code>cyber-sicherheit-2</code>, <code>firewall-system-2</code>, <code>trusted-computing-2</code>, <code>ipsec-verschluesselung-3</code> …) ein reales Duplicate-Content-Risiko. <strong>Behebung:</strong> selbstreferenzierende Canonicals global aktivieren (Yoast-Standardfunktion) — live verifiziert fehlt das Tag derzeit.</p>
+        <p><strong>Einordnung:</strong> Bei den historisch gewachsenen „-2“-Duplikat-URLs (<code>cyber-sicherheit-2</code>, <code>firewall-system-2</code>, <code>trusted-computing-2</code>, <code>ipsec-verschluesselung-3</code> …) ein reales Duplicate-Content-Risiko. <strong>Behebung:</strong> selbstreferenzierende Canonicals global aktivieren (Yoast-Standardfunktion) – live verifiziert fehlt das Tag derzeit.</p>
         <p><a class="ev" href="evidence/screamingfrog-01.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>Nachweis (Screenshot)</a></p>
       </div>
     </details>
@@ -599,7 +610,7 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
       <summary>Links: Interne Outlinks ohne Ankertext <span class="tag t-crit">349 URLs · 100 %</span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="d-body">
         <p class="q">„Ankertext ist der sichtbare Text und die Wörter, die in Hyperlinks verwendet werden, die Benutzern und Suchmaschinen Kontext über den Inhalt der Zielseite bieten. Wenn es sich um ein Bild handelt, ist die Spalte ‚Alt-Text‘ auch leer.“</p>
-        <p><strong>Einordnung:</strong> Betroffen sind vor allem verlinkte Bilder und die Kachel-Navigation. Ankertexte sind zugleich Kontextsignal für LLMs — doppelter GEO-/SEO-Nutzen bei Behebung.</p>
+        <p><strong>Einordnung:</strong> Betroffen sind vor allem verlinkte Bilder und die Kachel-Navigation. Ankertexte sind zugleich Kontextsignal für LLMs – doppelter GEO-/SEO-Nutzen bei Behebung.</p>
         <p><a class="ev" href="evidence/screamingfrog-03.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>Nachweis (Screenshot)</a></p>
       </div>
     </details>
@@ -615,7 +626,7 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
       <summary>Überschriften-Struktur: H2 mehrere / fehlende / Duplikate / zu lang <span class="tag t-warn">bis 185 URLs</span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="d-body">
         <p class="q">„Sorgen Sie dafür, dass <code>&lt;h2&gt;</code> in einer logischen hierarchischen Überschriftenstruktur verwendet werden … den vollständigen Überschriftenrang zwischen (h3–h6) für zusätzliche Überschriften verwenden.“</p>
-        <p><strong>Einordnung:</strong> Zusätzlich sind 153 H1 länger als 70 Zeichen, auf 3 Seiten fehlt die H2 ganz. Deckt sich mit dem Live-Befund, dass Abschnittsüberschriften der Glossarseite nur als Fettdruck statt als echte h2/h3 ausgeliefert werden (<a href="#live">Kapitel 06, Befund B</a>).</p>
+        <p><strong>Einordnung:</strong> Zusätzlich sind 153 H1 länger als 70 Zeichen, auf 3 Seiten fehlt die H2 ganz. Auf der analysierten Glossarseite zeigt sich ein verwandtes Problem: Die Abschnittsüberschriften des Artikeltextes werden nur als Fettdruck statt als echte h2/h3 ausgeliefert (<a href="#live">Kapitel 06, Befund B</a>).</p>
         <p><a class="ev" href="evidence/screamingfrog-08.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>H2 mehrere</a> <a class="ev" href="evidence/screamingfrog-10.png" target="_blank"><svg class="ic"><use href="#i-img"/></svg>H2 Duplikate</a></p>
       </div>
     </details>
@@ -630,42 +641,41 @@ User-agent: anthropic-ai <span class="dim">(u. a.)</span>
   </div>
 
   <div class="panel">
-    <h3><svg class="ic"><use href="#i-img"/></svg>Screenshot-Galerie — Original-Nachweise aus dem Tool</h3>
+    <h3><svg class="ic"><use href="#i-img"/></svg>Screenshot-Galerie – Original-Nachweise aus dem Tool</h3>
     <div class="gallery">
-      <a class="shot" href="evidence/screamingfrog-01.png" target="_blank"><img src="evidence/screamingfrog-01.png" alt="Screaming Frog: Canonicals fehlende — 323 URLs, 91,5 Prozent" loading="lazy"><span>Canonicals: Fehlende (323 · 91,5 %)</span></a>
-      <a class="shot" href="evidence/screamingfrog-02.png" target="_blank"><img src="evidence/screamingfrog-02.png" alt="Screaming Frog: Beschreibung interne Outlinks ohne Ankertext" loading="lazy"><span>Outlinks ohne Ankertext — Beschreibung</span></a>
-      <a class="shot" href="evidence/screamingfrog-03.png" target="_blank"><img src="evidence/screamingfrog-03.png" alt="Screaming Frog: Interne Outlinks ohne Ankertext — 349 URLs" loading="lazy"><span>Outlinks ohne Ankertext (349 · 100 %)</span></a>
-      <a class="shot" href="evidence/screamingfrog-04.png" target="_blank"><img src="evidence/screamingfrog-04.png" alt="Screaming Frog: Fehlender Referrer-Policy-Header — 456 URLs" loading="lazy"><span>Fehlender Referrer-Policy-Header (456)</span></a>
-      <a class="shot" href="evidence/screamingfrog-05.png" target="_blank"><img src="evidence/screamingfrog-05.png" alt="Screaming Frog: Fehlender X-Content-Type-Options-Header — 456 URLs" loading="lazy"><span>Fehlender X-Content-Type-Options (456)</span></a>
+      <a class="shot" href="evidence/screamingfrog-01.png" target="_blank"><img src="evidence/screamingfrog-01.png" alt="Screaming Frog: Canonicals fehlende – 323 URLs, 91,5 Prozent" loading="lazy"><span>Canonicals: Fehlende (323 · 91,5 %)</span></a>
+      <a class="shot" href="evidence/screamingfrog-02.png" target="_blank"><img src="evidence/screamingfrog-02.png" alt="Screaming Frog: Beschreibung interne Outlinks ohne Ankertext" loading="lazy"><span>Outlinks ohne Ankertext – Beschreibung</span></a>
+      <a class="shot" href="evidence/screamingfrog-03.png" target="_blank"><img src="evidence/screamingfrog-03.png" alt="Screaming Frog: Interne Outlinks ohne Ankertext – 349 URLs" loading="lazy"><span>Outlinks ohne Ankertext (349 · 100 %)</span></a>
+      <a class="shot" href="evidence/screamingfrog-04.png" target="_blank"><img src="evidence/screamingfrog-04.png" alt="Screaming Frog: Fehlender Referrer-Policy-Header – 456 URLs" loading="lazy"><span>Fehlender Referrer-Policy-Header (456)</span></a>
+      <a class="shot" href="evidence/screamingfrog-05.png" target="_blank"><img src="evidence/screamingfrog-05.png" alt="Screaming Frog: Fehlender X-Content-Type-Options-Header – 456 URLs" loading="lazy"><span>Fehlender X-Content-Type-Options (456)</span></a>
       <a class="shot" href="evidence/screamingfrog-06.png" target="_blank"><img src="evidence/screamingfrog-06.png" alt="Screaming Frog: Fehlender X-Frame-Options-Header und Problemliste" loading="lazy"><span>Fehlender X-Frame-Options + Problemliste</span></a>
-      <a class="shot" href="evidence/screamingfrog-07.png" target="_blank"><img src="evidence/screamingfrog-07.png" alt="Screaming Frog: Seiten mit vielen externen Outlinks — 178 URLs" loading="lazy"><span>Viele externe Outlinks (178 · 51 %)</span></a>
-      <a class="shot" href="evidence/screamingfrog-08.png" target="_blank"><img src="evidence/screamingfrog-08.png" alt="Screaming Frog: H2 mehrere — 185 URLs" loading="lazy"><span>H2: Mehrere (185 · 53 %)</span></a>
+      <a class="shot" href="evidence/screamingfrog-07.png" target="_blank"><img src="evidence/screamingfrog-07.png" alt="Screaming Frog: Seiten mit vielen externen Outlinks – 178 URLs" loading="lazy"><span>Viele externe Outlinks (178 · 51 %)</span></a>
+      <a class="shot" href="evidence/screamingfrog-08.png" target="_blank"><img src="evidence/screamingfrog-08.png" alt="Screaming Frog: H2 mehrere – 185 URLs" loading="lazy"><span>H2: Mehrere (185 · 53 %)</span></a>
       <a class="shot" href="evidence/screamingfrog-09.png" target="_blank"><img src="evidence/screamingfrog-09.png" alt="Screaming Frog: Fehlender CSP-Header, URL-Liste und Ergebnisleiste" loading="lazy"><span>Fehlender CSP-Header + Ergebnisleiste</span></a>
-      <a class="shot" href="evidence/screamingfrog-10.png" target="_blank"><img src="evidence/screamingfrog-10.png" alt="Screaming Frog: H2 Duplikate und vollständige Problemliste — 35 Typen" loading="lazy"><span>H2: Duplikate + Gesamtliste (35 Typen)</span></a>
+      <a class="shot" href="evidence/screamingfrog-10.png" target="_blank"><img src="evidence/screamingfrog-10.png" alt="Screaming Frog: H2 Duplikate und vollständige Problemliste – 35 Typen" loading="lazy"><span>H2: Duplikate + Gesamtliste (35 Typen)</span></a>
     </div>
   </div>
 </section>
 
-<!-- 05 -->
 <section id="robots">
   <div class="sec-head">
     <span class="kap">Kapitel 05</span>
-    <h2>robots.txt und llms.txt — Eigenanalyse</h2>
+    <h2>robots.txt und llms.txt – Eigenanalyse</h2>
   </div>
-  <p class="sec-lead">Die robots.txt wurde zeilenweise gegen RFC 9309 und die Google-Spezifikation geprüft: konzeptionell vorbildlich, aber mit einem Syntaxfehler. Die llms.txt besteht zwar den formalen PageSpeed-Check, ist inhaltlich jedoch weitgehend entwertet — die wertvollsten Abschnitte enthalten nur leere Links.</p>
+  <p class="sec-lead">Die robots.txt wurde zeilenweise gegen RFC 9309 und die Google-Spezifikation geprüft: konzeptionell vorbildlich, aber mit einem Syntaxfehler. Die llms.txt besteht zwar den formalen PageSpeed-Check, ist inhaltlich jedoch weitgehend entwertet – die wertvollsten Abschnitte enthalten nur leere Links.</p>
 
   <div class="duo">
     <div class="pane">
-      <div class="pane-h h-crit"><svg class="ic"><use href="#i-x"/></svg>robots.txt — Ist-Zustand: Syntaxfehler in Zeile 14</div>
+      <div class="pane-h h-crit"><svg class="ic"><use href="#i-x"/></svg>robots.txt – Ist-Zustand: Syntaxfehler in Zeile 14</div>
       <div class="pane-b">
-        <p>PageSpeed bestätigt: <em>„robots.txt is not valid — 1 error found. Pattern should either be empty, start with ‘/’ or ‘*’.“</em> Der führende Schrägstrich fehlt — die Regel ist ungültig und wird von Crawlern ignoriert.</p>
+        <p>PageSpeed bestätigt: <em>„robots.txt is not valid – 1 error found. Pattern should either be empty, start with ‘/’ or ‘*’.“</em> Der führende Schrägstrich fehlt – die Regel ist ungültig und wird von Crawlern ignoriert.</p>
 <pre class="code"><span class="cm"># Zeile 14:</span>
 Disallow: <span class="del">wp-content/uploads/2019/08/Social-
 Web-Cyber-Sicherheit-…-18_03_20.pptx</span></pre>
       </div>
     </div>
     <div class="pane">
-      <div class="pane-h h-ok"><svg class="ic"><use href="#i-check"/></svg>robots.txt — Soll-Zustand: Korrektur und Vereinfachung</div>
+      <div class="pane-h h-ok"><svg class="ic"><use href="#i-check"/></svg>robots.txt – Soll-Zustand: Korrektur und Vereinfachung</div>
       <div class="pane-b">
         <p>Führenden „/“ ergänzen; zusätzlich lassen sich die 61 einzelnen .pptx-Zeilen durch ein Wildcard-Muster (RFC 9309) ersetzen:</p>
 <pre class="code">Disallow: <span class="ins">/</span>wp-content/uploads/2019/08/Social-
@@ -682,15 +692,15 @@ Disallow: <span class="ins">/wp-content/uploads/2019/08/*.pptx</span></pre>
     <div class="pn" style="grid-template-columns:1fr">
       <ul>
         <li><svg class="ic" style="color:var(--ok)"><use href="#i-check"/></svg><span><strong>KI-Sektion korrekt aufgebaut:</strong> Gruppen mit mehreren User-agent-Zeilen und gemeinsamem <code>Allow: /</code> sind syntaktisch zulässig; abgedeckt sind OpenAI (3 Bots), Perplexity (2), Anthropic (4), Google-Extended. Ergänzenswert: Applebot-Extended, Meta-ExternalAgent.</span></li>
-        <li><svg class="ic" style="color:var(--warn)"><use href="#i-alert"/></svg><span><strong>Konsistenz:</strong> Die robots.txt verweist auf <code>/sitemap.xml</code>, die llms.txt auf <code>/sitemap_index.xml</code> — beide Angaben vereinheitlichen.</span></li>
-        <li><svg class="ic" style="color:var(--accent)"><use href="#i-search"/></svg><span><strong>Einordnung:</strong> Die robots.txt ist <em>nicht</em> die Ursache der Crawler-Blockade aus <a href="#kernbefund">Kapitel 02</a> — sie erlaubt die Bots ja. Die Blockade greift vorgelagert auf Server-/Firewall-Ebene.</span></li>
+        <li><svg class="ic" style="color:var(--warn)"><use href="#i-alert"/></svg><span><strong>Konsistenz:</strong> Die robots.txt verweist auf <code>/sitemap.xml</code>, die llms.txt auf <code>/sitemap_index.xml</code> – beide Angaben vereinheitlichen.</span></li>
+        <li><svg class="ic" style="color:var(--accent)"><use href="#i-search"/></svg><span><strong>Einordnung:</strong> Die robots.txt ist <em>nicht</em> die Ursache der Crawler-Blockade aus <a href="#kernbefund">Kapitel 02</a> – sie erlaubt die Bots ja. Die Blockade greift vorgelagert auf Server-/Firewall-Ebene.</span></li>
       </ul>
     </div>
   </div>
 
   <div class="duo" style="margin-top:14px">
     <div class="pane">
-      <div class="pane-h h-crit"><svg class="ic"><use href="#i-x"/></svg>llms.txt — Ist-Zustand: drei Defekte (Yoast SEO v27.6)</div>
+      <div class="pane-h h-crit"><svg class="ic"><use href="#i-x"/></svg>llms.txt – Ist-Zustand: drei Defekte (Yoast SEO v27.6)</div>
       <div class="pane-b">
 <pre class="code"># Prof<span class="del">\.</span> Dr<span class="del">\.</span> Norbert Pohlmann   <span class="cm"><- Defekt 3: Escapes</span>
 Generated by Yoast SEO v27.6, …
@@ -706,11 +716,11 @@ Generated by Yoast SEO v27.6, …
 ## Schlagwörter
 - [c](…/tag/c/)  - [s](…/tag/s/)
   <span class="cm"><- Defekt 2: Ein-Buchstaben-Tags (Datenrauschen)</span></pre>
-        <p style="margin-top:12px;margin-bottom:0"><strong>Bewertung:</strong> Ausgerechnet „Seiten“ und „Beiträge“ — die inhaltlich wertvollsten Abschnitte — enthalten ausschließlich Links ohne Ziel-URL und sind für ein LLM damit nutzlos. Kein einziger der rund 100 Glossarbegriffe ist einzeln gelistet.</p>
+        <p style="margin-top:12px;margin-bottom:0"><strong>Bewertung:</strong> Ausgerechnet „Seiten“ und „Beiträge“ – die inhaltlich wertvollsten Abschnitte – enthalten ausschließlich Links ohne Ziel-URL und sind für ein LLM damit nutzlos. Kein einziger der rund 100 Glossarbegriffe ist einzeln gelistet.</p>
       </div>
     </div>
     <div class="pane">
-      <div class="pane-h h-ok"><svg class="ic"><use href="#i-check"/></svg>llms.txt — Soll-Zustand: kuratierte Struktur (Beispiel)</div>
+      <div class="pane-h h-ok"><svg class="ic"><use href="#i-check"/></svg>llms.txt – Soll-Zustand: kuratierte Struktur (Beispiel)</div>
       <div class="pane-b">
 <pre class="code"># Prof. Dr. Norbert Pohlmann – Cyber-Sicherheit
 &gt; Glossar, Artikel und Lehrmaterial des
@@ -728,7 +738,7 @@ Generated by Yoast SEO v27.6, …
 
 ## Optional
 - [Sitemap](…/sitemap_index.xml)</pre>
-        <p style="margin-top:12px;margin-bottom:0"><strong>Umsetzung:</strong> Yoast-Generierung prüfen bzw. aktualisieren (die leeren Links deuten auf einen Bug oder eine Fehlkonfiguration hin) oder die llms.txt manuell kuratieren — manuell ist für GEO ohnehin die bessere Praxis.</p>
+        <p style="margin-top:12px;margin-bottom:0"><strong>Umsetzung:</strong> Yoast-Generierung prüfen bzw. aktualisieren (die leeren Links deuten auf einen Bug oder eine Fehlkonfiguration hin) oder die llms.txt manuell kuratieren – manuell ist für GEO ohnehin die bessere Praxis.</p>
       </div>
     </div>
   </div>
@@ -741,8 +751,8 @@ Generated by Yoast SEO v27.6, …
         <button class="copybtn" type="button" data-copy="robots-full"><svg class="ic"><use href="#i-clip"/></svg>Kopieren</button>
       </div>
     </div>
-    <p class="note" style="margin-top:8px">Vollständige, direkt einspielbare Fassung — Zeile für Zeile aus der <a href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener">Live-Datei der Domain</a> (101 Zeilen, Stand 05.07.2026) übernommen und um genau drei Punkte korrigiert: die 61 fehleranfälligen .pptx-Einzelzeilen (inklusive der defekten Zeile 14) sind durch ein RFC-9309-Wildcard ersetzt, die im Bericht empfohlenen Crawler Applebot-Extended und Meta-ExternalAgent ergänzt, und die Sitemap-Angabe mit der llms.txt vereinheitlicht. Alle übrigen Regeln — inklusive SeobilityBot mit Crawl-delay — bleiben unverändert erhalten. Die Datei kann direkt heruntergeladen und per FTP/Hosting-Panel eingespielt werden.</p>
-<pre class="code" id="robots-full"># robots.txt — norbert-pohlmann.com
+    <p class="note" style="margin-top:8px">Vollständige, direkt einspielbare Fassung – Zeile für Zeile aus der <a href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener">Live-Datei der Domain</a> (101 Zeilen, Stand 05.07.2026) übernommen und um genau drei Punkte korrigiert: die 61 fehleranfälligen .pptx-Einzelzeilen (inklusive der defekten Zeile 14) sind durch ein RFC-9309-Wildcard ersetzt, die im Bericht empfohlenen Crawler Applebot-Extended und Meta-ExternalAgent ergänzt, und die Sitemap-Angabe mit der llms.txt vereinheitlicht. Alle übrigen Regeln – inklusive SeobilityBot mit Crawl-delay – bleiben unverändert erhalten. Die Datei kann direkt heruntergeladen und per FTP/Hosting-Panel eingespielt werden.</p>
+<pre class="code" id="robots-full"># robots.txt – norbert-pohlmann.com
 # Soll-Fassung auf Basis der Live-Datei vom 05.07.2026 (101 Zeilen)
 
 User-agent: *
@@ -795,7 +805,7 @@ Crawl-delay: 10
 
 # Vereinheitlicht mit der llms.txt (Live-Datei bisher: /sitemap.xml):
 Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
-    <p class="note" style="margin-top:10px"><strong>Wichtig:</strong> Die robots.txt allein hebt die Blockade aus <a href="#kernbefund">Kapitel 02</a> nicht auf — zuerst müssen die User-Agent-Sperren auf Server-/Firewall-Ebene entfernt werden (Maßnahme 1). Diese Datei stellt danach sicher, dass keine zweite Hürde greift.</p>
+    <p class="note" style="margin-top:10px"><strong>Wichtig:</strong> Die robots.txt allein hebt die Blockade aus <a href="#kernbefund">Kapitel 02</a> nicht auf – zuerst müssen die User-Agent-Sperren auf Server-/Firewall-Ebene entfernt werden (Maßnahme 1). Diese Datei stellt danach sicher, dass keine zweite Hürde greift.</p>
   </div>
 
   <div class="panel filebox" style="margin-top:14px">
@@ -807,7 +817,7 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
       </div>
     </div>
     <p class="note" style="margin-top:8px">Manuell kuratierte Fassung nach dem llms.txt-Standard, die die defekte Yoast-Generierung ersetzt: alle drei Defekte behoben (vollständige Ziel-URLs, keine Escape-Zeichen, keine Ein-Buchstaben-Tags), 19 Kern-Glossarbegriffe mit Kurzbeschreibung sowie die fünf echten Kategorien der <a href="https://norbert-pohlmann.com/llms.txt" target="_blank" rel="noopener">Live-Datei</a>. Alle Begriffs-URLs sind durch den Screaming-Frog-Crawl dieser Analyse verifiziert; die Liste lässt sich redaktionell beliebig erweitern. Die Datei kann direkt heruntergeladen und im Domain-Root abgelegt werden.</p>
-<pre class="code" id="llms-full"># Prof. Dr. Norbert Pohlmann — Cyber-Sicherheit
+<pre class="code" id="llms-full"># Prof. Dr. Norbert Pohlmann – Cyber-Sicherheit
 
 &gt; Glossar, Artikel und Lehrmaterial des Informatikprofessors für
 &gt; Cyber-Sicherheit und Leiters des Instituts für Internet-Sicherheit if(is).
@@ -855,19 +865,18 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
   </div>
 </section>
 
-<!-- 06 -->
 <section id="live">
   <div class="sec-head">
     <span class="kap">Kapitel 06</span>
     <h2>Live-Analyse der Glossarseite</h2>
   </div>
-  <p class="sec-lead">Ergänzend zu den Tool-Reports wurde die Muster-URL am 05.07.2026 direkt abgerufen und der ausgelieferte Quellinhalt analysiert — Stärken und Schwächen im direkten Vergleich.</p>
+  <p class="sec-lead">Ergänzend zu den Tool-Reports wurde die Muster-URL am 05.07.2026 direkt abgerufen und der ausgelieferte Quellinhalt analysiert – Stärken und Schwächen im direkten Vergleich.</p>
 
   <div class="pn">
     <div class="panel pos">
-      <h3><svg class="ic" style="color:var(--ok)"><use href="#i-check"/></svg>Positiv verifiziert — GEO-Stärken</h3>
+      <h3><svg class="ic" style="color:var(--ok)"><use href="#i-check"/></svg>Positiv verifiziert – GEO-Stärken</h3>
       <ul>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><strong>Zitierfähige Kerndefinition im ersten Satz:</strong> „Cyber-Sicherheit (auch Cyber Security oder Internet-Sicherheit) umfasst alle Aspekte der IT-Sicherheit, erweitert deren Aktionsfeld jedoch auf den gesamten Cyber-Raum.“ — in sich geschlossen, ideal für Featured Snippets und LLM-Zitate; die Meta-Description (118 Zeichen) transportiert dieselbe Kernaussage.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><strong>Zitierfähige Kerndefinition im ersten Satz:</strong> „Cyber-Sicherheit (auch Cyber Security oder Internet-Sicherheit) umfasst alle Aspekte der IT-Sicherheit, erweitert deren Aktionsfeld jedoch auf den gesamten Cyber-Raum.“ – in sich geschlossen, ideal für Featured Snippets und LLM-Zitate; die Meta-Description (118 Zeichen) transportiert dieselbe Kernaussage.</span></li>
         <li><svg class="ic"><use href="#i-check"/></svg><span><strong>E-E-A-T-Signale vollständig:</strong> Autorenbox (Informatikprofessor für Cyber-Sicherheit, Leiter des Instituts für Internet-Sicherheit), sichtbares Stand-Datum 24.06.2026, Meta modified 2026-06-24 als Aktualitätssignal.</span></li>
         <li><svg class="ic"><use href="#i-check"/></svg><span><strong>Belegte Quellen:</strong> Springer-Lehrbuch (ISBN), Bitkom-Studie Wirtschaftsschutz 2025, BSI-Lagebericht 2025.</span></li>
         <li><svg class="ic"><use href="#i-check"/></svg><span><strong>FAQ-Block</strong> mit fünf präzisen Frage-Antwort-Paaren (inkl. NIS2/DSGVO-Bezug) und Vergleichstabelle Cyber Security vs. IT-Sicherheit.</span></li>
@@ -875,12 +884,12 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
       </ul>
     </div>
     <div class="panel neg">
-      <h3><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg>Live verifizierte Schwächen — Befunde A–D</h3>
+      <h3><svg class="ic" style="color:var(--crit)"><use href="#i-x"/></svg>Live verifizierte Schwächen – Befunde A–D</h3>
       <ul>
-        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>A — H1 und Title verwässert:</strong> H1 „Cyber-Sicherheit - Prof. Dr. Norbert Pohlmann“ — der Autorenname gehört nicht in die H1. Empfehlung: H1 „Was ist Cyber-Sicherheit?“, Title „Was ist Cyber-Sicherheit? Definition, Abgrenzung &amp; Beispiele“. Deckt sich mit Screaming Frog (153 H1 über 70 Zeichen).</span></li>
-        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>B — Inhalt in Layout-Tabelle, keine echten Headings:</strong> Abschnittsüberschriften („2. Taxonomie …“) erscheinen als Fettdruck statt als h2/h3 — Suchmaschinen und LLMs können die Gliederung maschinell nur eingeschränkt erkennen.</span></li>
-        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>C — Kein Canonical, Schema unvollständig:</strong> Kein <code>rel="canonical"</code> im Head (deckungsgleich mit PageSpeed und Screaming Frog). Article-Schema vorhanden, aber FAQPage- und DefinedTerm-Markup fehlen — beides starke, leicht nachrüstbare Signale.</span></li>
-        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>D — Nicht crawlbare Navigations-Links:</strong> <code>&lt;a href="javascript:void(0);"&gt;</code> (Menü) und <code>&lt;a href="#"&gt;</code> (Footer) — identisch mit dem PageSpeed-Befund „Links are not crawlable“. Empfehlung: <code>&lt;button&gt;</code>-Elemente statt Anker.</span></li>
+        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>A – H1 und Title verwässert:</strong> H1 „Cyber-Sicherheit - Prof. Dr. Norbert Pohlmann“ – der Autorenname gehört nicht in die H1. Empfehlung: H1 „Was ist Cyber-Sicherheit?“, Title „Was ist Cyber-Sicherheit? Definition, Abgrenzung &amp; Beispiele“. Ein verwandtes Muster zeigt der Crawl domain-weit: 153 H1 sind länger als 70 Zeichen.</span></li>
+        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>B – Inhalt in Layout-Tabelle, keine echten Headings:</strong> Abschnittsüberschriften („2. Taxonomie …“) erscheinen als Fettdruck statt als h2/h3 – Suchmaschinen und LLMs können die Gliederung maschinell nur eingeschränkt erkennen.</span></li>
+        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>C – Kein Canonical, Schema unvollständig:</strong> Kein <code>rel="canonical"</code> im Head (deckungsgleich mit PageSpeed und Screaming Frog). Article-Schema vorhanden, aber FAQPage- und DefinedTerm-Markup fehlen – beides starke, leicht nachrüstbare Signale.</span></li>
+        <li><svg class="ic"><use href="#i-x"/></svg><span><strong>D – Nicht crawlbare Navigations-Links:</strong> <code>&lt;a href="javascript:void(0);"&gt;</code> (Menü) und <code>&lt;a href="#"&gt;</code> (Footer) – identisch mit dem PageSpeed-Befund „Links are not crawlable“. Empfehlung: <code>&lt;button&gt;</code>-Elemente statt Anker.</span></li>
       </ul>
     </div>
   </div>
@@ -890,13 +899,12 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
   </div>
 </section>
 
-<!-- 07 -->
 <section id="content-readiness">
   <div class="sec-head">
     <span class="kap">Kapitel 07</span>
-    <h2>GEO-Content-Readiness — Otterly.AI</h2>
+    <h2>GEO-Content-Readiness – Otterly.AI</h2>
   </div>
-  <p class="sec-lead">Die Content-Analyse bescheinigt der Seite 100 % statisch lesbaren Inhalt („Amazing, most of your content is not dynamic and readable by LLM Crawlers“). Die Readiness liegt bei 73 %, Structured Data bei 85 % — der Block „Content“ ist mit 66 % der schwächste.</p>
+  <p class="sec-lead">Die Content-Analyse bescheinigt der Seite 100 % statisch lesbaren Inhalt („Amazing, most of your content is not dynamic and readable by LLM Crawlers“). Die Readiness liegt bei 73 %, Structured Data bei 85 % – der Block „Content“ ist mit 66 % der schwächste.</p>
 
   <div class="ps-duo">
     <div class="panel">
@@ -913,23 +921,23 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <div class="panel">
       <h3><svg class="ic"><use href="#i-search"/></svg>Schwächste Readiness-Kriterien</h3>
       <div class="score sc-warn"><span class="s-k">Summary Block</span><span class="tr"><i style="width:60%"></i></span><span class="s-v">60 %</span></div>
-      <p class="score-note">Kein „Key Takeaways“-Feld — Kernaussagen-Box mit 3–5 Punkten direkt nach der Einleitung ergänzen.</p>
+      <p class="score-note">Kein „Key Takeaways“-Feld – Kernaussagen-Box mit 3–5 Punkten direkt nach der Einleitung ergänzen.</p>
       <div class="score sc-warn"><span class="s-k">Semantic Repetition</span><span class="tr"><i style="width:60%"></i></span><span class="s-v">60 %</span></div>
-      <p class="score-note">Unnötige Duplikate (Definitions-Bild erscheint zweimal, ähnliche Textbausteine) — reduzieren, Synonyme gezielt nutzen.</p>
+      <p class="score-note">Unnötige Duplikate (Definitions-Bild erscheint zweimal, ähnliche Textbausteine) – reduzieren, Synonyme gezielt nutzen.</p>
       <div class="score sc-warn"><span class="s-k">External Links</span><span class="tr"><i style="width:60%"></i></span><span class="s-v">60 %</span></div>
       <p class="score-note">Neutrale Zusatzquellen empfohlen: ENISA, NIST Cybersecurity Framework, BSI-Überblick.</p>
       <div class="score sc-warn"><span class="s-k">Acronyms</span><span class="tr"><i style="width:65%"></i></span><span class="s-v">65 %</span></div>
-      <p class="score-note">IAM, SIEM, DoH, SSI erscheinen ohne unmittelbare Erklärung — beim ersten Vorkommen kurz definieren.</p>
+      <p class="score-note">IAM, SIEM, DoH, SSI erscheinen ohne unmittelbare Erklärung – beim ersten Vorkommen kurz definieren.</p>
       <div class="score sc-warn"><span class="s-k">Specificity</span><span class="tr"><i style="width:70%"></i></span><span class="s-v">70 %</span></div>
-      <p class="score-note">Wenige quantitative Angaben — ein bis zwei statistische Kernaussagen (BSI-/ENISA-Zahlen) ergänzen.</p>
+      <p class="score-note">Wenige quantitative Angaben – ein bis zwei statistische Kernaussagen (BSI-/ENISA-Zahlen) ergänzen.</p>
       <div class="score sc-ok"><span class="s-k">Readability</span><span class="tr"><i style="width:80%"></i></span><span class="s-v">80 %</span></div>
-      <p class="score-note" style="margin-bottom:0">FAQs stehen relativ weit unten — als „Schnellantworten“ weiter nach oben.</p>
+      <p class="score-note" style="margin-bottom:0">FAQs stehen relativ weit unten – als „Schnellantworten“ weiter nach oben.</p>
     </div>
   </div>
 
   <div class="panel">
     <h3><svg class="ic"><use href="#i-clip"/></svg>Abgeleiteter Content-Bauplan für die Musterseite</h3>
-    <p style="font-size:14px">Kernaussagen-Box → Definition → Taxonomie mit Tabelle → belegte Statistik (BSI-/Bitkom-Zahl im Text) → FAQ mit FAQPage-Schema weiter oben → Quellen inkl. ENISA/NIST. Die Tool-Empfehlungen decken sich mit der Live-Analyse: Die Quellen Bitkom/BSI sind bereits verlinkt, aber keine Zahl daraus wird im Text genannt; der FAQ-Block ist stark, sitzt aber tief.</p>
+    <p style="font-size:14px">Empfohlene Reihenfolge: (1) Kernaussagen-Box, (2) Definition, (3) Taxonomie mit Tabelle, (4) belegte Statistik (BSI-/Bitkom-Zahl im Text), (5) FAQ mit FAQPage-Schema weiter oben, (6) Quellen inkl. ENISA/NIST. Die Tool-Empfehlungen decken sich mit der Live-Analyse: Die Quellen Bitkom/BSI sind bereits verlinkt, aber keine Zahl daraus wird im Text genannt; der FAQ-Block ist stark, sitzt aber tief.</p>
     <div class="ev-row">
       <span class="lbl">Nachweise</span>
       <a class="ev" href="evidence/otterly-content-analysis.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Content-Analyse (PDF)</a>
@@ -937,13 +945,12 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
   </div>
 </section>
 
-<!-- 08 -->
 <section id="brand">
   <div class="sec-head">
     <span class="kap">Kapitel 08</span>
-    <h2>KI-Sichtbarkeit — Otterly Brand-Report</h2>
+    <h2>KI-Sichtbarkeit – Otterly Brand-Report</h2>
   </div>
-  <p class="sec-lead">Der Brand-Report quantifiziert die Folgen der Crawler-Blockade: nur 3 % Brand Coverage. Die Domain liegt mit 4 % Citation Share auf Platz 3 — und zitiert werden fast nur Buchseite, ein PDF und die Startseite, nicht die Glossarseiten.</p>
+  <p class="sec-lead">Der Brand-Report quantifiziert die Folgen der Crawler-Blockade: nur 3 % Brand Coverage. Die Domain liegt mit 4 % Citation Share auf Platz 3 – und zitiert werden fast nur Buchseite, ein PDF und die Startseite, nicht die Glossarseiten.</p>
 
   <div class="ps-duo">
     <div class="panel">
@@ -979,7 +986,7 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
       </div>
       <div class="panel" style="margin-top:14px">
         <h3><svg class="ic"><use href="#i-search"/></svg>Interpretation und Benchmark</h3>
-        <p style="font-size:14px">Zusammen mit dem <a href="#kernbefund">Blockade-Befund</a> ergibt sich ein konsistentes Bild: Die vorhandene Sichtbarkeit speist sich aus Trainingsdaten und älteren Indexständen, nicht aus Live-Abrufen der optimierten Glossarinhalte. Die Zahlen — <strong>Coverage 3 % · Share 4 % · Platz 3</strong> — sind der Benchmark für das monatliche Monitoring nach Umsetzung der Maßnahmen.</p>
+        <p style="font-size:14px">Zusammen mit dem <a href="#kernbefund">Blockade-Befund</a> ergibt sich ein konsistentes Bild: Die vorhandene Sichtbarkeit speist sich aus Trainingsdaten und älteren Indexständen, nicht aus Live-Abrufen der optimierten Glossarinhalte. Die Zahlen – <strong>Coverage 3 % · Share 4 % · Platz 3</strong> – sind der Benchmark für das monatliche Monitoring nach Umsetzung der Maßnahmen.</p>
         <div class="ev-row">
           <span class="lbl">Nachweise</span>
           <a class="ev" href="evidence/otterly-brand-report.pdf" target="_blank"><svg class="ic"><use href="#i-doc"/></svg>Brand-Report (PDF)</a>
@@ -989,7 +996,6 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
   </div>
 </section>
 
-<!-- 09 -->
 <section id="massnahmen">
   <div class="sec-head">
     <span class="kap">Kapitel 09</span>
@@ -1005,8 +1011,8 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <div class="rm-item r-warn"><span class="no"></span><div><div class="h"><strong>Mobilen LCP unter 2,5 s bringen</strong><span class="tag t-warn">Hoch</span><span class="m">Aufwand mittel · Entwickler</span></div><p>WebP/AVIF und responsive srcset, WP Rocket „Remove Unused CSS“ / „Delay JS“, FontAwesome lokal bzw. als Subset. <a href="#performance">Nachweise: Kapitel 03</a></p></div></div>
     <div class="rm-item r-warn"><span class="no"></span><div><div class="h"><strong>javascript:void(0)- und #-Links ersetzen</strong><span class="tag t-warn">Hoch</span><span class="m">Aufwand gering · Entwickler</span></div><p>Durch <code>&lt;button&gt;</code>-Elemente bzw. echte URLs ersetzen (live verifiziert). <a href="#live">Befund D: Kapitel 06</a></p></div></div>
     <div class="rm-item r-warn"><span class="no"></span><div><div class="h"><strong>Musterseiten-Umbau</strong><span class="tag t-warn">Hoch</span><span class="m">Aufwand mittel · Entwickler/SEO</span></div><p>Inhalt aus der Layout-Tabelle lösen, echte h2/h3; H1 als Frage ohne Autorname; Title mit Suchintention; FAQPage- und DefinedTerm-Schema ergänzen. <a href="#live">Befunde A–C: Kapitel 06</a></p></div></div>
-    <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>Sicherheits-Header zentral setzen</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand gering · Admin</span></div><p>HSTS, CSP, X-Frame-Options, X-Content-Type-Options (nosniff), Referrer-Policy — eine .htaccess/nginx-Maßnahme für alle 456 URLs. <a href="#crawl">Nachweis: Kapitel 04</a></p></div></div>
-    <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>349 interne Links: Anker- und Alt-Texte</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand mittel · Redaktion</span></div><p>Beschreibende Ankertexte für Kacheln und verlinkte Bilder — doppelter SEO-/GEO-Nutzen.</p></div></div>
+    <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>Sicherheits-Header zentral setzen</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand gering · Admin</span></div><p>HSTS, CSP, X-Frame-Options, X-Content-Type-Options (nosniff), Referrer-Policy – eine .htaccess/nginx-Maßnahme für alle 456 URLs. <a href="#crawl">Nachweis: Kapitel 04</a></p></div></div>
+    <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>349 interne Links: Anker- und Alt-Texte</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand mittel · Redaktion</span></div><p>Beschreibende Ankertexte für Kacheln und verlinkte Bilder – doppelter SEO-/GEO-Nutzen.</p></div></div>
     <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>Content-Feinschliff nach Otterly-Empfehlungen</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand mittel · Redaktion</span></div><p>Kernaussagen-Box, FAQ höher platzieren, ein bis zwei belegte BSI-/Bitkom-Zahlen im Text, ENISA-/NIST-Links, Akronym-Einführung, Bild-Duplikat entfernen. <a href="#content-readiness">Nachweis: Kapitel 07</a></p></div></div>
     <div class="rm-item r-info"><span class="no"></span><div><div class="h"><strong>Accessibility und Agentic Browsing</strong><span class="tag t-info">Mittel</span><span class="m">Aufwand mittel · Entwickler</span></div><p>Button- und Link-Namen, ez-toc-Kontrast, <code>&lt;main&gt;</code>-Landmark, tabindex, Touch-Targets. <a href="#performance">Nachweis: Kapitel 03</a></p></div></div>
     <div class="rm-item r-ok"><span class="no"></span><div><div class="h"><strong>Monitoring</strong><span class="tag t-ok">Laufend</span><span class="m">Aufwand gering · SEO</span></div><p>Monatlicher Brand-Report (Benchmark: 3 % Coverage / 4 % Share / Platz 3), KI-Referrer in Analytics, Bot-Logfile-Kontrolle.</p></div></div>
@@ -1014,37 +1020,36 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
 
   <div class="panel conclusion" style="margin-top:14px">
     <h3><svg class="ic"><use href="#i-shield"/></svg>Fazit</h3>
-    <p>Inhaltlich ist die Glossarseite bereits nahe am GEO-Ideal — zitierfähige Definition, FAQ, Autorität, Aktualität, Quellen. Der Engpass ist der <strong>Zugang</strong>: Eine User-Agent-selektive Server-Blockade sperrt exakt die offiziellen KI-Crawler aus, während die robots.txt sie einlädt — flankiert von einer inhaltlich leeren llms.txt und fehlenden Canonicals. Diese Kombination erklärt vollständig, warum trotz hochwertiger Inhalte nur 3 % Brand Coverage erreicht werden. Nach Umsetzung der Maßnahmen 1–7 kann die Seite im Wettbewerb um KI-Zitierungen mit bsi.bund.de und Springer konkurrieren — und dient dann als belastbare Musterseiten-Vorlage für das gesamte Glossar.</p>
+    <p>Inhaltlich ist die Glossarseite bereits nahe am GEO-Ideal – zitierfähige Definition, FAQ, Autorität, Aktualität, Quellen. Der Engpass ist der <strong>Zugang</strong>: Eine User-Agent-selektive Server-Blockade sperrt exakt die offiziellen KI-Crawler aus, während die robots.txt sie einlädt – flankiert von einer inhaltlich leeren llms.txt und fehlenden Canonicals. Diese Kombination erklärt vollständig, warum trotz hochwertiger Inhalte nur 3 % Brand Coverage erreicht werden. Nach Umsetzung der Maßnahmen 1–7 kann die Seite im Wettbewerb um KI-Zitierungen mit bsi.bund.de und Springer konkurrieren – und dient dann als belastbare Musterseiten-Vorlage für das gesamte Glossar.</p>
   </div>
 </section>
 
-<!-- 10 -->
 <section id="nachweise">
   <div class="sec-head">
     <span class="kap">Kapitel 10</span>
     <h2>Nachweise und Anhang</h2>
   </div>
-  <p class="sec-lead">Vollständiges Verzeichnis aller Original-Quellen dieses Audits — Reports als PDF, Tool-Screenshots und Live-Links.</p>
+  <p class="sec-lead">Vollständiges Verzeichnis aller Original-Quellen dieses Audits – Reports als PDF, Tool-Screenshots und Live-Links.</p>
 
   <div class="ps-duo">
     <div class="panel">
       <h3><svg class="ic"><use href="#i-doc"/></svg>Reports (PDF)</h3>
       <ul class="app">
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-desktop.pdf" target="_blank">PageSpeed Insights — Desktop (22:48 Uhr, 39 Seiten)</a></li>
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-mobile.pdf" target="_blank">PageSpeed Insights — Mobile (22:45 Uhr, 37 Seiten)</a></li>
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-crawlability-audit.pdf" target="_blank">Otterly.AI — Crawlability-Audit (Server Access + robots.txt Check)</a></li>
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-content-analysis.pdf" target="_blank">Otterly.AI — Content-Analyse (Readiness + Structured Data)</a></li>
-        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-brand-report.pdf" target="_blank">Otterly.AI — Brand-Report (Citations, Coverage, Share)</a></li>
+        <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-desktop.pdf" target="_blank">PageSpeed Insights – Desktop (22:48 Uhr, 39 Seiten)</a></li>
+        <li><span class="ft f-pdf">PDF</span><a href="evidence/pagespeed-mobile.pdf" target="_blank">PageSpeed Insights – Mobile (22:45 Uhr, 37 Seiten)</a></li>
+        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-crawlability-audit.pdf" target="_blank">Otterly.AI – Crawlability-Audit (Server Access + robots.txt Check)</a></li>
+        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-content-analysis.pdf" target="_blank">Otterly.AI – Content-Analyse (Readiness + Structured Data)</a></li>
+        <li><span class="ft f-pdf">PDF</span><a href="evidence/otterly-brand-report.pdf" target="_blank">Otterly.AI – Brand-Report (Citations, Coverage, Share)</a></li>
       </ul>
       <h3 style="margin-top:24px"><svg class="ic"><use href="#i-code"/></svg>Vorlagen zum Übernehmen</h3>
       <ul class="app">
-        <li><span class="ft">TXT</span><a href="vorlagen/robots.txt" download="robots.txt">robots.txt — korrigierte Soll-Fassung (Download)</a></li>
-        <li><span class="ft">TXT</span><a href="vorlagen/llms.txt" download="llms.txt">llms.txt — kuratierte Soll-Fassung (Download)</a></li>
+        <li><span class="ft">TXT</span><a href="vorlagen/robots.txt" download="robots.txt">robots.txt – korrigierte Soll-Fassung (Download)</a></li>
+        <li><span class="ft">TXT</span><a href="vorlagen/llms.txt" download="llms.txt">llms.txt – kuratierte Soll-Fassung (Download)</a></li>
       </ul>
       <h3 style="margin-top:24px"><svg class="ic"><use href="#i-globe"/></svg>Live-Reports und geprüfte URLs</h3>
       <ul class="app">
-        <li><span class="ft f-live">LIVE</span><a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=desktop" target="_blank" rel="noopener">PageSpeed Insights — Desktop-Analyse</a></li>
-        <li><span class="ft f-live">LIVE</span><a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=mobile" target="_blank" rel="noopener">PageSpeed Insights — Mobile-Analyse</a></li>
+        <li><span class="ft f-live">LIVE</span><a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=desktop" target="_blank" rel="noopener">PageSpeed Insights – Desktop-Analyse</a></li>
+        <li><span class="ft f-live">LIVE</span><a href="https://pagespeed.web.dev/analysis/https-norbert-pohlmann-com-glossar-cyber-sicherheit-cyber-sicherheit-2/2hxbu8axcw?form_factor=mobile" target="_blank" rel="noopener">PageSpeed Insights – Mobile-Analyse</a></li>
         <li><span class="ft f-live">LIVE</span><a href="https://norbert-pohlmann.com/glossar-cyber-sicherheit/cyber-sicherheit-2/" target="_blank" rel="noopener">Analysierte Glossarseite</a></li>
         <li><span class="ft f-live">LIVE</span><a href="https://norbert-pohlmann.com/" target="_blank" rel="noopener">Startseite (Gegenprobe zur Crawler-Blockade)</a></li>
         <li><span class="ft f-live">LIVE</span><a href="https://norbert-pohlmann.com/robots.txt" target="_blank" rel="noopener">robots.txt</a></li>
@@ -1054,18 +1059,18 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     <div class="panel">
       <h3><svg class="ic"><use href="#i-img"/></svg>Tool-Screenshots (Originale)</h3>
       <ul class="app">
-        <li><span class="ft f-img">IMG</span><a href="evidence/otterly-server-access-check.png" target="_blank">Otterly Server Access Check — alle Bots „Disallow“</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/llms-txt-original.png" target="_blank">llms.txt im Browser — leere Link-Klammern sichtbar</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-01.png" target="_blank">Screaming Frog 01 — Canonicals: Fehlende (323)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-02.png" target="_blank">Screaming Frog 02 — Outlinks ohne Ankertext (Beschreibung)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-03.png" target="_blank">Screaming Frog 03 — Outlinks ohne Ankertext (349)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-04.png" target="_blank">Screaming Frog 04 — Fehlender Referrer-Policy-Header (456)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-05.png" target="_blank">Screaming Frog 05 — Fehlender X-Content-Type-Options (456)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-06.png" target="_blank">Screaming Frog 06 — Fehlender X-Frame-Options (456)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-07.png" target="_blank">Screaming Frog 07 — Viele externe Outlinks (178)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-08.png" target="_blank">Screaming Frog 08 — H2: Mehrere (185)</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-09.png" target="_blank">Screaming Frog 09 — Fehlender CSP-Header + Ergebnisleiste</a></li>
-        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-10.png" target="_blank">Screaming Frog 10 — H2: Duplikate + Gesamtliste (35 Typen)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/otterly-server-access-check.png" target="_blank">Otterly Server Access Check – alle Bots „Disallow“</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/llms-txt-original.png" target="_blank">llms.txt im Browser – leere Link-Klammern sichtbar</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-01.png" target="_blank">Screaming Frog 01 – Canonicals: Fehlende (323)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-02.png" target="_blank">Screaming Frog 02 – Outlinks ohne Ankertext (Beschreibung)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-03.png" target="_blank">Screaming Frog 03 – Outlinks ohne Ankertext (349)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-04.png" target="_blank">Screaming Frog 04 – Fehlender Referrer-Policy-Header (456)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-05.png" target="_blank">Screaming Frog 05 – Fehlender X-Content-Type-Options (456)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-06.png" target="_blank">Screaming Frog 06 – Fehlender X-Frame-Options (456)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-07.png" target="_blank">Screaming Frog 07 – Viele externe Outlinks (178)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-08.png" target="_blank">Screaming Frog 08 – H2: Mehrere (185)</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-09.png" target="_blank">Screaming Frog 09 – Fehlender CSP-Header + Ergebnisleiste</a></li>
+        <li><span class="ft f-img">IMG</span><a href="evidence/screamingfrog-10.png" target="_blank">Screaming Frog 10 – H2: Duplikate + Gesamtliste (35 Typen)</a></li>
       </ul>
     </div>
   </div>
@@ -1083,7 +1088,7 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
 (function(){
   /* PageSpeed-Ringe */
   var labels=["Performance","Accessibility","Best Practices","SEO"];
-  function color(v){return v>=90?"#1d6b4a":v>=50?"#95610f":"#a32330"}
+  function color(v){return v>=90?"#187a50":v>=50?"#8a5d0e":"#ae2437"}
   function ring(val,lbl,col,txt){
     var r=29,c=2*Math.PI*r,off=c*(1-val/100);
     return '<div class="gauge"><svg viewBox="0 0 72 72" role="img" aria-label="'+lbl+': '+txt+'">'+
@@ -1096,7 +1101,7 @@ Sitemap: https://norbert-pohlmann.com/sitemap_index.xml</pre>
     var s=el.dataset.scores.split(",").map(Number),h="";
     s.forEach(function(v,i){h+=ring(v,labels[i],color(v),v)});
     var ag=el.dataset.agentic;
-    if(ag){h+=ring(ag/3*100,"Agentic Browsing",ag>=3?"#1d6b4a":"#95610f",ag+"/3")}
+    if(ag){h+=ring(ag/3*100,"Agentic Browsing",ag>=3?"#187a50":"#8a5d0e",ag+"/3")}
     el.innerHTML=h;
   });
 
