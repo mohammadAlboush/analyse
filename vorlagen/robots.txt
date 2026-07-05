@@ -1,0 +1,53 @@
+# robots.txt - norbert-pohlmann.com
+# Soll-Fassung auf Basis der Live-Datei vom 05.07.2026 (101 Zeilen)
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /lostpassword/
+Disallow: /resetpass/
+Disallow: /register/
+Disallow: /registrierung/
+Allow: /wp-admin/admin-ajax.php
+
+# Ersetzt die 61 einzelnen .pptx-Zeilen der Live-Datei (Zeilen 12-72),
+# darunter die fehlerhafte Zeile 14 ohne fuehrenden "/".
+# Wildcards sind Teil von RFC 9309 und werden von Google unterstuetzt:
+Disallow: /wp-content/uploads/2019/08/*.pptx
+
+# ---- KI-Crawler (aus der Live-Datei uebernommen) ----
+
+# OpenAI
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Ergaenzung gemaess Kapitel 05 des Pruefberichts:
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# SEO-Tool
+User-agent: SeobilityBot
+Allow: /
+Crawl-delay: 10
+
+# Vereinheitlicht mit der llms.txt (Live-Datei bisher: /sitemap.xml):
+Sitemap: https://norbert-pohlmann.com/sitemap_index.xml
